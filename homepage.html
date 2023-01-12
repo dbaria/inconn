@@ -5,23 +5,29 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.typekit.net/ltj8jlw.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
       <style type="text/css">
-        @font-face {
+        /* @font-face {
          font-family: "greycliffcf-bold";
          src: url("../fonts/greycliffcf-bold.eot");
          }
          @font-face {
          font-family: "greycliffcf-regular";
          src: url("../fonts/greycliffcf-regular.eot");
-         }
+         } */
         body{
           color: #000;
           line-height: 24px;
           letter-spacing: 0;
           box-sizing: border-box;
-          /*font-family: "greycliffcf-regular";*/
+         font-family: greycliff-cf,sans-serif;
+
         }
      
          h1{
@@ -75,7 +81,7 @@
          .navbar .btn{
           color:#F5F5F5;
           padding: 10px 20px;
-          font-size: 14px;
+          font-size: 16px;
           border-radius: 4px;
          }
          .btn.contact-us{
@@ -108,7 +114,7 @@
           position: absolute;
           top: 15%;
           left: 5%;
-          max-width: 540px;
+          max-width: 600px;
           width: 100%;
          }
          .banner-text h1{
@@ -596,7 +602,7 @@ p.show+p.show {
         }
         .footer-mobile{
               background: #1F1E1F;
-              padding: 16px 0 26px;
+              padding: 35px 0 35px;
             }
             .footer-mobile-logo a{
               display: block;
@@ -633,7 +639,7 @@ p.show+p.show {
             }
             .mobile-privacy a,.mobile-terms-conditions a{
               font-weight: 600;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 140%;
               letter-spacing: -0.01em;
               color: #AFACAF;
@@ -675,6 +681,7 @@ p.show+p.show {
               font-size: 20px;
               line-height: 140%;
               letter-spacing: -0.01em;
+              color: #3E3C3E;
             }
             .mobile-industry-type {
                 padding: 32px 20px;
@@ -1023,6 +1030,7 @@ p.show+p.show {
               }
                                         
              .slogan-text h2{
+               font-family: greycliff-cf, sans-serif;
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 120%;
@@ -1067,6 +1075,7 @@ p.show+p.show {
             overflow-x: scroll;
             overflow-y: hidden;
             padding-bottom: 32px;
+            left:0;
             }
             .centralized-center-section {
                 display: inline-block;
@@ -1141,10 +1150,11 @@ p.show+p.show {
                 padding: 10px 7px;
             }
             .navigation-mobile .btn.contact-us{
-                  width: 86px;
+                  width: 100px;
             }
             .navigation-mobile .btn.get-demo{
-              width: 79px;
+              width: 85px;
+              padding: 10px 2px;
             }
             
         }
@@ -1158,6 +1168,183 @@ p.show+p.show {
               line-height: 120%;
           }
          }
+
+         .slick-dots li button::before {
+            font-size: 10px;
+         }
+      
+         #spin:after {
+            content:"";
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% { content:"productivity"; }
+  20% { content:"performance"; }
+  40% { content:"efficiancy"; }
+  60% { content:"maintenance"; }
+  100% { content:"productivity"; }
+}
+
+.smartway-text h3{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 500;
+font-style: normal;
+color: #5E5A5E;
+}
+.supercharge-text h2{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 600;
+font-style: normal;
+color: #535053;
+}
+
+body p{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #5E5A5E;
+font-size: 20px;
+}
+body{
+   font-family: greycliff-cf,sans-serif;
+}
+.clients-total-numbers p {
+  font-size: 19px;
+}
+/* .btn.btn-success{
+   background: linear-gradient(to left, white 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.btn.btn-success:hover{
+   background-position: left;
+} */
+.modal-body{
+   padding-top: 35px;
+   
+}
+.modal-footer{
+   padding-bottom: 35px;
+}
+.modal-footer p{
+   font-size: 14px;
+}
+.modal-header, .modal-footer{
+   border: none;
+}
+.btn.w-100{
+   background-color: #1F1E1F;
+}
+.modal-footer a{
+   color: #ED4D37;
+   text-decoration: underline;
+}
+.modal.show .modal-dialog{
+	width: 762px;
+    height: 906px;
+}
+.modal-content{
+	background: #fff;
+    border-radius: 12px;
+    width: 100%;
+    padding: 40px 64px 80px;
+}
+.modal-content h2{
+	font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #3E3C3E;
+    margin-bottom: 8px;
+}
+.modal-content p{
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #3E3C3E;
+}
+.modal-content form .form-group {
+    margin-bottom: 24px;
+}
+.modal-content form .form-group label{
+	font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #878287;
+    margin-bottom: 8px;
+}
+
+.modal-content form .form-group input{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #878287;
+    height: 54px;
+    border: 0.5px solid #C3C1C3;
+    border-radius: 4px;
+}
+.modal-header,.modal-footer{
+	padding: 0;
+}
+.modal-footer{
+	justify-content: center;
+}
+.modal-body{
+	padding: 64px 0 24px;
+}
+
+.modal-content form .form-group input.phonenumber, select#inputTeam{
+	height: 60px;
+}
+select#inputTeam{
+	-webkit-appearance: none;
+    overflow: hidden;
+    background-image: url(./images/arrow.svg);
+    background-position: 275px 13px;
+    background-repeat: no-repeat;
+}
+textarea.form-control {
+    height: 98px;
+    border: 0.5px solid #C3C1C3;
+    resize: none;
+    margin-bottom: 8px;
+}
+.modal-body .btn{
+	background: #1F1E1F;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    padding: 16px 0;
+    letter-spacing: -0.01em;
+}
+.modal-footer p{
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+ @media (max-width: 767px){
+	.modal-content{
+		padding: 20px;
+	}
+	.modal.show .modal-dialog{
+		width: 95%;
+	    height: auto;
+	    margin: 10px auto;
+	}
+	.modal-open .modal{
+		padding-right: 0 !important;
+	}
+}
+
+
+
+
+
       </style>
    </head>
 <body>
@@ -1167,7 +1354,7 @@ p.show+p.show {
             <a class="navbar-brand" href="#"><img src="images/logo-mobile.png" alt="logo-img"></a>
             <div>
                <button class="btn contact-us" type="submit">Contact Us</button>
-               <button class="btn get-demo" type="submit">Get Demo</button>
+               <button class="btn get-demo" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
             </div>
          </nav>
       </div>
@@ -1212,18 +1399,6 @@ p.show+p.show {
                   </div>
                </div>
             </div>
-            <!-- <div class="slide">
-               <img src="./images/predictive-asset-managements.png" class="img-responsive d-none d-sm-block" alt="intelligent-integration">
-               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
-               <div class="container">
-                  <div class="banner-text">
-                     <p>EAM Simplified</p>
-                     <h1>Get more out of your assets and resources </h1>
-                     <p class="banner-information">Reimagine your maintenance from preventative to <span>predictive asset management</span> with ease. Gain complete visibility with comprehensive predictive analytics blended with custom reports and dashboards that streamline your operations for enhanced productivity. Get Demo Now! </p>
-                     <button class="btn btn-success" type="submit">Get Demo</button>
-                  </div>
-               </div>
-            </div> -->
          </section>
       </div>
       <!-- banner section -->
@@ -1233,26 +1408,26 @@ p.show+p.show {
             <div class="clients-total-numbers">
                <div class="row">
                   <div class="col-sm-3 col-6 m-auto">
-                     <div class="total-number-clients ">
-                        <h3>12+</h3>
+                     <div class="total-number-clients">
+                        <h3><span id="total-clients">25</span>+</h3>
                         <p>Clients Globally</p>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6 m-auto">
                      <div class="licensed-users">
-                        <h3>150+</h3>
+                        <h3><span id="total-users">500</span>+</h3>
                         <p>Licensed Users</p>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6 m-auto">
                      <div class="total-number-clients ">
-                        <h3>1000+</h3>
+                        <h3><span id="real-time-asset">3000</span>+</h3>
                         <p>Assets Managed in Real time</p>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6 m-auto">
                      <div class="licensed-users">
-                        <h3>1500+</h3>
+                        <h3><span id="total-order">68000</span>+</h3>
                         <p>Work Order Generated</p>
                      </div>
                   </div>
@@ -1266,7 +1441,7 @@ p.show+p.show {
          <div class="container-fluid">
             <div class="supercharge-performance">
                <div class="supercharge-text ">
-                  <h2>Supercharge <span>performance </span>throughout your operations</h2>
+                  <h2>Supercharge <span id="spin"></span><br>throughout your operations</h2>
                   <p>Stay ahead and informed of operational inefficiencies with insights, automation and integrations — everything you need to optimise operations & maintenance is here. </p>
                </div>
                <div class="supercharge-performance-img">
@@ -1462,7 +1637,7 @@ p.show+p.show {
       <!-- slogan -->
       <div class="slogan-text">
          <div class="container">
-            <h2>Save costs, reduce safety risks, make informed decisions on the go. </h2>
+            <h2>Save costs, reduce safety risks, make<br> informed decisions on the go. </h2>
          </div>
       </div>
       <!-- slogan -->
@@ -1515,7 +1690,7 @@ p.show+p.show {
       <div class="control-assets-mobile">
          <div class="container">
             <div class="control-desktop-mobile">
-               <h3>Take control of your assets  today</h3>
+               <h3>Take control of your<br>assets today</h3>
                <p>Eliminate the sticky note chaos and data silos. Inconn makes it simple to see where everything stands, all in one place.</p>
                <div>
                   <button class="btn contact-us" type="submit">Contact Us</button>
@@ -1572,11 +1747,59 @@ p.show+p.show {
          </div>
       </div>
    </footer>
+   <!-- Button trigger modal -->
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <a class="navbar-brand" href="#"><img src="images/logo-mobile.png" alt="logo-img"></a>
+       </div>
+       <div class="modal-body">
+       	<h2>Get Demo</h2>
+       	<p>Tell us a little bit more about yourself and we’ll tell you a lot  more about us.</p>
+         <form id="form">
+            <div class="form-group">
+               <label for="inputName">Name</label>
+               <input type="text" class="form-control" id="inputName" name="Name" placeholder="abc">
+             </div>
+             <div class="form-group">
+               <label for="inputEmail">Email Address</label>
+               <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="xyz@gmail.com">
+             </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputPhone">Phone Number</label>
+                <input type="text" class="form-control phonenumber" id="inputPhone" name="Phone" placeholder="1234567890">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputTeam">Team Size</label>
+                <select id="inputTeam" class="form-control" name="Team Size">
+                  <option selected>1-10</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcomments">Comments</label>
+              <textarea class="form-control" id="inputcomments" name="Comments" rows="3" placeholder="Type your comment here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" id="submit">Sign in</button>
+          </form>
+   
+       </div>
+       <div class="modal-footer">
+         <p>By clicking submit you accept our <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a></p>
+       </div>
+     </div>
+   </div>
+ </div>  
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
       <script type="text/javascript">
       $(document).ready(function(){
        
@@ -1592,12 +1815,14 @@ $(".product-features .nav-item a").click(function() {
                 $('.banner-images').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
+            autoplay: false,
+            autoplaySpeed: 3500,
             infinite: false,
             arrows: false,
-            dots: false,
+            dots: true,
             pauseOnHover: false,
+            fade: true,
+            cssEase: 'linear',
             responsive: [{
                 breakpoint: 768,
                 settings: {
@@ -1609,7 +1834,78 @@ $(".product-features .nav-item a").click(function() {
                     slidesToShow: 1
                 }
             }]
-        });           
+        });       
+        
+        $({ Counter1: 0 }).animate({
+  Counter1: $('#total-clients').text()
+}, {
+  duration: 3000,
+  easing: 'swing',
+  step: function() {
+    $('#total-clients').text(Math.ceil(this.Counter1));
+  }
+});
+
+$({ Counter2: 0 }).animate({
+  Counter2: $('#total-users').text()
+}, {
+  duration: 3000,
+  easing: 'swing',
+  step: function() {
+    $('#total-users').text(Math.ceil(this.Counter2));
+  }
+});
+
+$({ Counter3: 0 }).animate({
+  Counter3: $('#real-time-asset').text()
+}, {
+  duration: 3000,
+  easing: 'swing',
+  step: function() {
+    $('#real-time-asset').text(Math.ceil(this.Counter3));
+  }
+});
+
+$({ Counter4: 0 }).animate({
+  Counter4: $('#total-order').text()
+}, {
+  duration: 3000,
+  easing: 'swing',
+  step: function() {
+    $('#total-order').text(Math.ceil(this.Counter4));
+  }
+});
+
+const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxBrSLqWvka0EAKY52RMbhlOnD-7Iy3s5af6mx63oyWP5z-Wxj3effFQ4xyCA7bftWq/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+         //  alert('Success!', response)
+          submitButton.disabled = false
+          document.getElementById("form").reset();    
+          const div = document.createElement('div');
+          div.innerHTML = "Form submitted successfully";
+          div.style.color = "Green";
+          div.style.textAlign = "center";
+          div.style.paddingTop = "35px";
+          document.getElementById("form").appendChild(div); 
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+
       });
+
+      
       </script>
 </html>
