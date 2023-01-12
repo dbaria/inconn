@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>inconn</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <style type="text/css">
+        @font-face {
+         font-family: "greycliffcf-bold";
+         src: url("../fonts/greycliffcf-bold.eot");
+         }
+         @font-face {
+         font-family: "greycliffcf-regular";
+         src: url("../fonts/greycliffcf-regular.eot");
+         }
+        body{
+          color: #000;
+          line-height: 24px;
+          letter-spacing: 0;
+          box-sizing: border-box;
+          /*font-family: "greycliffcf-regular";*/
+        }
+     
+         h1{
+          font-size: 56px;
+         }
+         h2{
+         font-size: 48px;
+         }
+         h3{
+          font-size: 40px;
+         }
+         h4,p{
+          font-size: 20px;
+         }
+         h5{
+          font-size: 16px;
+         }
+         button:focus:not(:focus-visible) {
+              outline: 0;
+              box-shadow: none;
+          }
+          ul{
+            list-style: none;
+            padding: 0;
+          }
+         .bg-grey{
+            background-color: #F8F7F8;
+         }
+         /*header css*/
+         .navbar{
+           /*background-color: #1F1E1F !important;*/
+           padding: 24px 80px;
+         }
+         .navbar-dark .navbar-brand{
+            margin-right: 65px;
+         }
+
+        .navbar-dark .navbar-nav .nav-link {
+          font-family: 'greycliffcf-regular', Arial, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          display: block;
+          color:#fff;
+          margin-right: 24px;
+         }
+         .navbar-dark .navbar-nav .nav-link:focus,
+          .navbar-dark .navbar-nav .nav-link:hover{
+            color:#fff;
+         }
+         .navbar .btn{
+          color:#F5F5F5;
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 4px;
+         }
+         .btn.contact-us{
+          font-weight: 600;
+          line-height: 140%;
+          background: transparent;
+          border: 1px solid #F5F5F5;
+          margin-right: 24px;
+          width: 126px;
+         }
+         .btn.get-demo{
+            width: 120px;
+            background: #ED4D37;
+            border: none;
+            margin: 0;
+         }
+         .navigation-mobile .btn.contact-us{
+             border: 1px solid #5E5A5E;
+            color: #5E5A5E;
+           }
+           .navigation-mobile .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           }
+         /*header css*/
+
+         /*banner css*/
+         .banner-text{
+          position: absolute;
+          top: 15%;
+          left: 5%;
+          max-width: 540px;
+          width: 100%;
+         }
+         .banner-text h1{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 120%;
+          background: linear-gradient(229.19deg, #FF9B00 -20.45%, #ED4D37 89.52%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 16px 0 24px;
+          letter-spacing: -0.02em;
+         }
+        .banner-text p{
+          font-style: normal;
+          color: #fff;
+          margin-bottom: 15px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.065em;
+          margin: 0;
+        }
+        .banner-text p span{
+          color:#F69C38;
+        }
+
+         .banner-text .banner-information{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: #fff;
+            margin-bottom: 55px;
+            letter-spacing: -0.01em;
+         }
+         .banner-text .btn{
+          background: #FFFFFF;
+          box-shadow: 0px 4px 12px rgb(39 39 39 / 48%);
+          max-width: 170px;
+          border: none;
+          border-radius: 0;
+          color: #1F1E1F;
+          width: 100%;
+          padding: 10px 20px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+        }
+        .banner-images.slick-initialized .slick-slide {
+          position: relative;
+        }
+         .banner-images.slider .slick-slide img{
+          width: 100%;
+         }
+         /*banner css*/
+         /*client logo section css*/
+         .customer-logos img {
+            max-width: 180px;
+            margin: 0 auto;
+        }
+        .client-logos{
+          padding: 40px 0;
+        }
+        .client-logos p{
+          margin-bottom: 45px
+        }
+        /*client logo section css*/
+        /*product features*/
+        .product-features{
+          background: #1F1E1F;
+          padding: 92px 0 100px 80px;
+          min-height: 745px;
+        }
+        .product-features h5 {
+          font-weight: 600;
+          line-height: 140%;
+          letter-spacing: 0.065em;
+          text-transform: uppercase;
+          color: #fff;
+          text-align: left;
+          margin-bottom: 24px;
+      }
+      .nav.nav-pills{
+        max-width: 480px;
+    width: 100%;
+      }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p.show {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 132%;
+    color: #fff;
+    margin: 12px 0;
+    letter-spacing: -0.025em;
+}
+
+p.show+p.show {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* display: flex; */
+    color: #fff;
+    letter-spacing: -0.01em;
+}
+
+
+
+        /*product features*/
+         .slogan-text{
+              background: #F69C38;
+              padding: 64px 0;
+              text-align: center;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 120%;
+              letter-spacing: -0.03em;
+             }
+         /*footer css*/
+         footer.bg-grey{
+          padding: 69px 0 18px;
+         }
+         footer .socialmedia-links{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+         }
+         .links-socialmedia-icons .navbar-nav{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+         }
+         .links-socialmedia-icons .navbar-nav .nav-link {
+            padding-right: 0;
+            padding-left: 0;
+            color: #535053;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            margin-right: 24px;
+          }
+          .links-socialmedia-icons .navbar-nav .nav-item:last-child .nav-link{
+            margin: 0; 
+          }
+          .facebook-linkedin{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+          }
+          .facebook-linkedin  li{
+            max-width: 48px;
+            width: 100%;
+            margin-right: 12px;
+          }
+          .facebook-linkedin  li:last-child {
+            margin-right: 0;
+          }
+          .facebook-linkedin li a {
+              display: block;
+              width: 48px;
+              height: 48px;
+          }
+          .facebook-linkedin li a img{
+            width: 100%;
+          }
+          footer .copyrights{
+            margin-top: 80px
+          }
+         footer .copyrights  p{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #20484F;
+            margin: 0;
+         }
+         /*footer css*/
+
+         /*tabs to accordion css*/
+          
+
+          .product-features .tabs_wrapper {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            background: transparent;
+          }
+
+          .product-features ul.tabs {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            z-index: 10;
+            margin: 0;
+            padding: 80px 0;
+            width: 50%;
+            min-width: 175px;
+            list-style: none;
+            -ms-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: none;
+          }
+           .product-features ul.tabs li {
+              margin: 0;
+              cursor: pointer;
+              padding: 0;
+              line-height: 31px;
+              color: white;
+              text-align: left;
+              font-weight: bold;
+              background-color: #666;
+              background: transparent;
+              -ms-transition: all 0.3s ease;
+              -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+          }
+           .product-features ul.tabs li a{
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+            color: #5E5A5E;
+          }
+          .product-features ul.tabs li.active a {
+              background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+          }
+           .product-features ul.tabs li p{
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              margin: 20px 0 12px;
+              max-width: 477px;
+              letter-spacing: -0.01em;
+              width: 100%;
+            }
+            .product-features ul.tabs li p+p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              max-width: 477px;
+              width: 100%;
+              letter-spacing: -0.01em;
+            }
+            .small-img {
+              width: 200px;
+              display: none;
+            }
+          .tab_container {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            z-index: 20;
+            left: 0;
+            width: 46%;
+            min-width: 10px;
+            text-align: left;
+            background: transparent;
+            border-radius: 12px;
+            box-shadow: none;
+          }
+
+          .tab_content {
+            padding: 20px;
+            height: 100%;
+            display: none;
+          }
+
+          .tab_drawer_heading {
+            display: none;
+          }
+           .product-features img{
+            width: 100%;
+          }
+           /*tabs to accordion css*/
+           /*smartway css*/
+      .smartway-performance .supercharge-performance,.smartway{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+      .supercharge-text {
+        max-width: 608px;
+        width: 100%;
+      }
+       .supercharge-text p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+      }
+       .smartway-performance .supercharge-performance h2{
+        margin-top: 25px;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+       }
+       .smartway-performance .supercharge-performance span{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       }
+       .smartway-performance{
+        padding: 65px 0;
+       }
+       .supercharge-performance-img figure{
+          max-width: 551px;
+          width: 100%;
+          max-height: 320px;
+       }
+       .supercharge-performance-img figure img,.smartway-img figure img{
+          width: 100%;
+          margin: 0 auto;
+          height: 100%;
+       }
+       .smartway{
+        align-items: center;
+       }
+       .smartway-text{
+          max-width: 577px;
+          width: 100%;
+       }
+       .smartway-text h3{
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 120%;
+          margin-bottom: 24px;
+          letter-spacing: -0.025em;
+       }
+       .smartway-text p{
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+       }
+       .smartway-img figure{
+          max-width: 609px;
+          width: 100%;
+          max-height: 480px;
+       }
+        /*smartway css*/
+        .industries-type{
+          background: linear-gradient(180deg, #1F1E1F 26.48%, #3E3C3E 100%);
+        }
+        .industry-information{
+          position: relative;
+          padding-top: 65px;
+        }
+        .industry-information figure.factory-img{
+            position: absolute;
+            width: 265px;
+            left: 85px;
+            top: 30px;
+        }
+        
+        .industry-information figure.factory-img img{ width: 100%; }
+        .industry-data{
+          width: 307px;
+          height: 226px;
+          background: #3E3C3E;
+          padding: 38px 24px;
+          margin-right: 24px;
+        }
+
+        .industry-data figure{
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+        }
+        .industry-data h4{
+          display: inline-block;
+          vertical-align: middle;
+          color: #fff;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+          margin: 0!important;
+        }
+        .industry-data p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #fff;
+          max-width: 259px;
+          letter-spacing: -0.01em;
+          width: 100%;
+        }
+
+        .industries-info{
+          margin-left: 350px;
+        }
+        .industries-info h4{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 120%;
+          color: #fff;
+          margin: 0;
+          margin-bottom: 32px;
+        }
+        .asset-control{
+            max-width: 461px;
+            padding: 56px 48px;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        .asset-control h2{
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 120%;
+          color: #000;
+          letter-spacing: -0.025em;
+        }
+        .asset-control p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            margin: 16px 0;
+            letter-spacing: -0.01em;
+        }
+        .asset-control .btn.contact-us{
+          border: 1px solid #535053;
+        }
+        .asset-control .btn.get-demo{
+          color: #fff;
+        }
+        .control-assest{
+          position: relative;
+          padding: 250px 0px 105px 35px;
+        }
+        .control-assest figure.buildings{
+          position: absolute;
+          width: 200px;
+          bottom: -15px;
+          right: 250px;
+        }
+        .control-assest figure.arrow{
+          width: 850px;
+          left: 0;
+          top: -5px;
+          right: inherit;
+          position: absolute;
+        }
+         .control-assest figure.arrow img,.control-assest figure.buildings img{
+          width: 100%;
+        }
+        .clients-total-numbers{
+          text-align: center;
+          padding: 41px 0;
+        }
+
+        .enterprise figure img{
+          width: 100%;
+          margin: 0 auto;
+        }
+        .footer-mobile{
+              background: #1F1E1F;
+              padding: 16px 0 26px;
+            }
+            .footer-mobile-logo a{
+              display: block;
+              max-width: 74px;
+              width: 100%;
+            }
+            .email-social-media {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 22px 0 24px;
+            }
+             .email-social-media .email-id a{
+              font-style: normal;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 120%;
+              color: #fff;
+            }
+            .copyrights  p{
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 150%;
+              color: #AFACAF;
+            }
+            footer .copyrights{
+              margin: 0;
+            }
+            footer .copyrights p{
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              color: #AFACAF;
+            }
+            .mobile-privacy a,.mobile-terms-conditions a{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+              color: #AFACAF;
+            }
+
+            .privacy-terms-copyright{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-top: 1px solid #fff;
+              padding-top: 24px;
+            }
+            .mobile-privacy, .mobile-terms-conditions {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 32px;
+            }
+            .mobile-privacy li {
+              display: inline-block;
+              vertical-align: top;
+            }
+            .mobile-terms-conditions{
+              margin: 0;
+            }
+            .mobile-idustry-img-text figure{
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0;
+            }
+            .mobile-idustry-img-text figure img{
+                width: 100%;
+            }
+            .mobile-idustry-img-text h4{
+              display: inline-block;
+              vertical-align: middle;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+            }
+            .mobile-industry-type {
+                padding: 32px 20px;
+                background: #F8F7F8;
+                border-radius: 4px;
+                margin-right: 24px;
+                margin-bottom: 0;
+                width: 302px;
+                min-height: 226px;
+              }
+            .mobile-industry-type p{
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 140%;
+              color: #3E3C3E;
+              letter-spacing: -0.01em;
+            }
+            .mobile-industry {
+              padding: 68px 0 56px;
+            }
+            .mobile-industry h2 {
+              font-weight: 700;
+              font-size: 32px;
+              color: #1F1E1F;
+              line-height: 120%;
+              margin-bottom: 24px;
+            }
+            .industry-desktop-mobile{
+              display: flex;
+              align-items: center;
+            }
+            .mobile-idustry-img-text{
+              margin-bottom: 18px;
+            }
+            .control-assets-mobile h3{
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 120%;
+              letter-spacing: -0.025em;
+              color: #535053;
+              margin: 0;
+            }
+
+            .control-assets-mobile p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              margin: 16px 0 42px;
+              letter-spacing: -0.01em;
+              color: #535053;
+            }
+            .control-assets-mobile figure{
+              margin: 0;
+            }
+            .control-assets-mobile .btn.contact-us{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 140%;
+              border: 0.559722px solid #5E5A5E;
+              padding: 11px 8px;
+            }
+            .control-assets-mobile .btn.get-demo{
+              width: 120px;
+              color: #fff;
+              font-weight: 800;
+              font-size: 16px;
+              line-height: 140%;
+              padding: 12px 20px;
+              letter-spacing: -0.01em;
+            }
+            .control-assets-mobile{
+              position: relative;
+              background: #F8F7F8;
+              padding: 65px 0 0;
+            }
+            .control-assets-mobile figure img{
+              width: 100%;
+            }
+            .control-desktop-mobile{
+              max-width: 365px;
+              position: absolute;
+              top: 65px;
+            }
+            .centralized-center-section{
+              padding: 24px 12px;
+              width: 228px;
+              height: 156px;
+              background: #fff;
+              box-shadow: 0px 4px 12px rgb(157 157 157 / 12%);
+              border-radius: 8px;
+              margin-right: 16px;
+            }
+            .centralized-center-section figure {
+              width: 24px;
+              height: 32px;
+              /*display: inline-block;*/
+              }
+             .centralized-center-section p{
+              display: inline-block; 
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+              color: #3E3C3E;
+            }
+            .enterprise{
+              position: relative;
+            }
+            .enterprise .centralized-centre{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 6%;
+                left: 10%;
+            }
+            .hidedesktop{
+              display:none!important;
+            }
+            .nav-pills .nav-link{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 28px;
+              line-height: 120%;
+              color: #535053;
+              padding: 0;
+              margin-top: 32px;
+            }
+            .nav-pills .nav-link#asset-management-tab{
+              margin: 0;
+            }
+            .product-features .tab-content figure{
+              position: absolute;
+             width: 725px;
+            right: 0;
+            top: -135px;
+            }
+            .product-features .border-section{
+              position: relative;
+            }
+            .product-features .border-section:after {
+              content: "";
+              position: absolute;
+              background: #3E3C3E;
+              height: 100%;
+              width: 1px;
+              top: 0;
+              left: -20px;
+          }
+          .nav-pills .nav-link{
+            position: relative;
+          }
+          .nav-pills .nav-link.active:after {
+            content: "";
+            position: absolute;
+            background: red;
+            top: 0;
+            left: -19px;
+            height: 120%;
+            width: 1px;
+            background: #FF9B00;
+        }
+
+          @media screen and (max-width: 781px) {
+            .product-features .border-section:after {
+                content: "";
+                position: absolute;
+                background: #3E3C3E;
+                height: 1px;
+                width: 100%;
+                top: 99px;
+                left: 0;
+            }
+            .nav-pills .nav-link.active:after {
+                content: "";
+                position: absolute;
+                background: red;
+                top: 20px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: #FF9B00;
+            }
+
+            .nav-pills.flex-column{
+              flex-direction:row!important;
+              display: block;
+              scroll-behavior: smooth;
+              -webkit-overflow-scrolling: touch;
+              white-space: nowrap;
+              position: relative;
+              overflow-x: scroll;
+              overflow-y: hidden;
+            }
+            .product-features li.nav-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .nav-pills .nav-link{
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 120%;
+            }
+            .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 120%;
+            }
+              .nav-item p.show{
+              display:none!important;
+            }
+            .hidedesktop{
+              display:block!important;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              color: #fff;
+              letter-spacing: -0.01em;
+            }
+             .hidedesktop+.hidedesktop{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #fff;
+                letter-spacing: -0.01em;
+            }
+            .product-features .tab-content figure{
+              position: unset;
+               width: 100%;
+            }
+
+            .product-features .tab-content figure img{
+              border-radius: 8px;
+            }
+             .slogan-text{
+              padding: 32px 16px;
+            }
+          
+             img{
+              width: 100%;
+            }
+            /*header css*/
+            .navbar {
+                padding: 24px 20px;
+            }
+             /*header css*/
+             /*banner css*/
+             .banner-text {
+                max-width: 300px;
+                top: 15%;
+                left: 5%;
+              }
+             .banner-text p {
+                margin-bottom: 16px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0.065em;
+            }
+             .banner-text h1{
+              font-size: 24px;
+              margin: 0;
+             }
+             .banner-text .banner-information {
+                margin: 16px 0 24px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: -0.01em;
+            }
+             .banner-text .btn {
+                padding: 10px;
+                max-width: 105px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 140%;
+                align-items: center;
+                letter-spacing: -0.01em;
+            }
+            .customer-logos img {
+                width: auto;
+            }
+            .smartway-performance .supercharge-performance{
+             flex-direction: column;
+            }
+
+            .smartway{
+              flex-direction: column-reverse;
+            }
+            .smartway-img figure,.supercharge-performance-img figure{
+              max-width: 100%;
+              margin: 0;
+              max-height: inherit;
+            }
+            .smartway-performance .supercharge-performance h2,.smartway-performance .supercharge-performance span,.smartway-text h3{
+              font-size: 22px;
+              margin: 10px 10px 10px 0px;
+            }
+            .supercharge-text p,.smartway-text p{
+               font-size: 12px;
+            }
+            .smartway-performance {
+                padding: 35px 0;
+            }
+            .client-logos {
+                padding: 20px 0;
+            }
+                        
+            /*footer css*/
+             .mobile-privacy a, .mobile-terms-conditions a{
+              font-size: 12px;
+             }
+             footer .copyrights p {
+                font-size: 10px;
+            }
+            .email-social-media .email-id a {
+                font-size: 16px;
+            }
+             /*footer css*/
+             .clients-info {
+                  padding: 0;
+              }
+
+             .licensed-users h3,.total-number-clients  h3{
+              font-weight: 600;
+              font-size: 28px;
+              line-height: 120%;
+              text-align: center;
+              letter-spacing: -0.035em;
+             }
+
+             .licensed-users p,.total-number-clients  p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              text-align: center;
+              letter-spacing: -0.01em;
+              margin: 0;
+             }
+             .total-number-clients,.licensed-users {
+                  margin-bottom: 0;
+                  min-height: 122px;
+              }
+              .clients-total-numbers {
+                  padding: 32px 0;
+              }
+                                        
+             .slogan-text h2{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 120%;
+                color: #1F1E1F;
+                text-align: center;
+                letter-spacing: -0.03em;
+             }
+               .smartway-text,.supercharge-text,.control-assest figure.arrow {
+                  max-width: 100%;
+             }
+              .control-assest figure.buildings{
+              right: 0;
+             }
+             .control-desktop-mobile{
+              position: unset;
+             }
+
+             .industry-desktop-mobile{
+              display: block;
+              scroll-behavior: smooth;
+              -webkit-overflow-scrolling: touch;
+              white-space: nowrap;
+              position: relative;
+              overflow-x: scroll;
+              overflow-y: hidden;
+             }
+             .mobile-industry-type {
+                display: inline-block;
+            }
+            .mobile-industry-type p {
+                white-space: normal;
+            }
+            .enterprise {
+                background: #F8F7F8;
+            }
+            .enterprise .centralized-centre{
+              display: block;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            white-space: nowrap;
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-bottom: 32px;
+            }
+            .centralized-center-section {
+                display: inline-block;
+            }
+            .centralized-center-section figure {
+                display: block;
+            }
+            .centralized-center-section p {
+                white-space: normal;
+            }
+            .product-features{
+                min-height: auto;
+                padding: 0;
+            }
+          }
+
+     
+     
+
+         @media (min-width: 768px){
+         .navbar-expand-md .navbar-collapse {
+          justify-content: space-between;
+         }
+         }
+
+         @media (max-width: 1024px){
+          .navbar {
+              padding: 24px 40px;
+          }
+         }
+         @media (max-width: 912px){
+          .navbar {
+              padding: 24px 20px;
+          }
+          .navbar-dark .navbar-brand {
+              margin-right: 40px;
+          }
+          .navbar-dark .navbar-nav .nav-link {
+              font-size: 12px;
+              margin-right: 10px;
+          }
+          .btn.contact-us{
+            margin-right: 10px;
+          }
+          .control-assest figure.buildings{
+            right: 0;
+          }
+         }
+         @media  (max-device-width: 915px) and (orientation: landscape) {
+          .navbar {
+              padding: 24px 20px;
+          }
+          .navbar-dark .navbar-brand {
+              margin-right: 40px;
+          }
+          .navbar-dark .navbar-nav .nav-link {
+              font-size: 12px;
+              margin-right: 10px;
+          }
+          .btn.contact-us{
+            margin-right: 10px;
+          }
+         }
+
+
+         @media (max-width: 767px){
+           
+           .navbar {
+                background-color: #fff!important;
+            }
+            .navigation-mobile .btn{
+                padding: 10px 7px;
+            }
+            .navigation-mobile .btn.contact-us{
+                  width: 86px;
+            }
+            .navigation-mobile .btn.get-demo{
+              width: 79px;
+            }
+            
+        }
+
+         @media (max-width: 480px){
+          .banner-text h1 {
+              font-size: 20px;
+              margin: 0;
+              font-weight: 700;
+              font-size: 36px;
+              line-height: 120%;
+          }
+         }
+      </style>
+   </head>
+<body>
+   <header>
+      <div class="navigation-mobile">
+         <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><img src="images/logo-mobile.png" alt="logo-img"></a>
+            <div>
+               <button class="btn contact-us" type="submit">Contact Us</button>
+               <button class="btn get-demo" type="submit">Get Demo</button>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <!-- banner section -->
+      <div class=" main-banner">
+         <section class="banner-images slider">
+            <div class="slide">
+               <img src="./images/track-monitor.png" class="img-responsive d-none d-sm-block" alt="track-monitor">
+               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <div class="container">
+                  <div class="banner-text">
+                     <p>EAM Simplified</p>
+                     <h1>The Smarter way to manage your assets</h1>
+                     <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise on the go,</span>with real-time data, arming you with faster-informed decisions and eliminating inefficiencies that impact your operational results. Get Demo Now!</p>
+                     <button class="btn btn-success" type="submit">Get Demo</button>
+                  </div>
+               </div>
+            </div>
+            <div class="slide">
+               <img src="./images/asset-managements.png" class="img-responsive d-none d-sm-block" alt="asset-management">
+               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <div class="container">
+                  <div class="banner-text">
+                     <p>EAM Simplified</p>
+                     <h1>Stay agile. Reduce costs. Drive efficiency.</h1>
+                     <p class="banner-information">Transition your maintenance from preventative to <span>predictive asset management</span> effortlessly. Create a hyperconnected business that links people, data, and processes across your business.</p>
+                     <button class="btn btn-success" type="submit">Get Demo</button>
+                  </div>
+               </div>
+            </div>
+            <div class="slide">
+               <img src="./images/intelligent-integration.png" class="img-responsive d-none d-sm-block" alt="intelligent-integration">
+               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <div class="container">
+                  <div class="banner-text">
+                     <p>EAM Simplified</p>
+                     <h1>Intelligent & connected  asset management </h1>
+                     <p class="banner-information">Ready to deploy, easy to customise and simple to use. seamlessly unite your business with <span>intelligent IoT integrations</span> and robust asset connectivity capabilities in real time.</p>
+                     <button class="btn btn-success" type="submit">Get Demo</button>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="slide">
+               <img src="./images/predictive-asset-managements.png" class="img-responsive d-none d-sm-block" alt="intelligent-integration">
+               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <div class="container">
+                  <div class="banner-text">
+                     <p>EAM Simplified</p>
+                     <h1>Get more out of your assets and resources </h1>
+                     <p class="banner-information">Reimagine your maintenance from preventative to <span>predictive asset management</span> with ease. Gain complete visibility with comprehensive predictive analytics blended with custom reports and dashboards that streamline your operations for enhanced productivity. Get Demo Now! </p>
+                     <button class="btn btn-success" type="submit">Get Demo</button>
+                  </div>
+               </div>
+            </div> -->
+         </section>
+      </div>
+      <!-- banner section -->
+      <!-- client logos section -->
+      <div class="clients-info ">
+         <div class="container">
+            <div class="clients-total-numbers">
+               <div class="row">
+                  <div class="col-sm-3 col-6 m-auto">
+                     <div class="total-number-clients ">
+                        <h3>12+</h3>
+                        <p>Clients Globally</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-3 col-6 m-auto">
+                     <div class="licensed-users">
+                        <h3>150+</h3>
+                        <p>Licensed Users</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-3 col-6 m-auto">
+                     <div class="total-number-clients ">
+                        <h3>1000+</h3>
+                        <p>Assets Managed in Real time</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-3 col-6 m-auto">
+                     <div class="licensed-users">
+                        <h3>1500+</h3>
+                        <p>Work Order Generated</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- client logos section -->
+      <!-- smartway connect section -->
+      <div class="smartway-performance bg-grey">
+         <div class="container-fluid">
+            <div class="supercharge-performance">
+               <div class="supercharge-text ">
+                  <h2>Supercharge <span>performance </span>throughout your operations</h2>
+                  <p>Stay ahead and informed of operational inefficiencies with insights, automation and integrations — everything you need to optimise operations & maintenance is here. </p>
+               </div>
+               <div class="supercharge-performance-img">
+                  <figure>
+                     <img src="./images/supercharge-performance.png" class="img-responsive" alt="supercharge-performance">
+                  </figure>
+               </div>
+            </div>
+            <div class="smartway">
+               <div class="smartway-img">
+                  <figure>
+                     <img src="./images/smartway.png" class="img-responsive" alt="smartway">
+                  </figure>
+               </div>
+               <div class="smartway-text">
+                  <h3>Elevate your business with IoT connectivity & intelligent automation. </h3>
+                  <p>Amplify your operations with enhanced digital transformation. Designed and developed keeping your people and business in mind.   
+                     Get more out of your resources and assets with less manual efforts. The simple and easy to use Interface makes it ridiculously easy to manage every last detail of your asset lifecycle.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- smartway connect section -->
+      <!-- prodcut features section-->
+      <div class="product-features">
+ <div class="container-fluid">
+  <div class="border-section">
+     <h5>Product FEATURES</h5>
+  <div class="row">
+    <div class="col-md-5 mb-3">
+        <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="asset-management-tab" data-toggle="tab" href="#asset-management" role="tab" aria-controls="asset-management" aria-selected="true">Asset Management</a>
+    <p class="show first-link">Personalised, preventative digital asset management </p>
+    <p class="show first-link">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="workflow-collaboration-tab" data-toggle="tab" href="#workflow-collaboration" role="tab" aria-controls="workflow-collaboration" aria-selected="false">Workflows & Collaboration</a>
+    <p class="show">Centralised command centre for operation agility </p>
+    <p class="show">Eliminate data silos by logging all critical data across teams and assets — from work orders to asset data. Configure workflows as per your business needs — Gain holistic data visibility through our intuitive mobile app from top to frontline.</p>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="automation-integrations-tab" data-toggle="tab" href="#automation-integrations" role="tab" aria-controls="automation-integrations" aria-selected="false">Automations & Integrations</a>
+    <p class="show">Empower your people to do more with less — with IoT</p>
+    <p class="show">Upgrade your BMS with real-time data and smart IoT integrations. Reimagine your business-critical systems. Effortlessly elevate your business with IoT connectivity and intelligent automation and scale your business productivity for maximum impact.</p>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="sustainability-tab" data-toggle="tab" href="#sustainability" role="tab" aria-controls="sustainability" aria-selected="false">Sustainability</a>
+    <p class="show">Build towards sustainable future starting today!</p>
+    <p class="show">Integrate AI & IoT capabilities and take your digital transformation to new heights with empowered assets, people and processes. Reduce utility consumption and environmental footprint, cut costs and support ESG initiatives and contribute towards making the world better.</p>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="reporting-analytics-tab" data-toggle="tab" href="#reporting-analytics" role="tab" aria-controls="reporting-analytics" aria-selected="false">Automations & Integrations</a>
+    <p class="show">Visualise your entire operations with 360° data</p>
+    <p class="show">Gain holistic visibility with custom reports and dashboards to unlock insights - save cost, reduce risks and inefficiencies impacting your business. Predict and prevent downtimes and unexpected shutdowns, take action, be agile and streamline your processes for better outcomes. </p>
+  </li>
+</ul>
+    </div>
+    <!-- /.col-md-4 -->
+        <div class="col-md-7">
+      <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="asset-management" role="tabpanel" aria-labelledby="asset-management-tab">
+   <p class="hidedesktop">Personalised, preventative digital asset management</p>
+   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+   <figure>
+     <img src="./images/assets-management.png" class="img-responsive" alt="response-time">
+   </figure>
+  </div>
+  <div class="tab-pane fade" id="workflow-collaboration" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
+    <p class="hidedesktop">Personalised, preventative digital asset management</p>
+   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+   <figure>
+     <img src="./images/workflow-collaboration.png" class="img-responsive" alt="workflow-collaboration">
+   </figure>
+  </div>
+  <div class="tab-pane fade" id="automation-integrations" role="tabpanel" aria-labelledby="automation-integrations-tab">
+     <p class="hidedesktop">Personalised, preventative digital asset management</p>
+   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+   <figure>
+     <img src="./images/automations-integrations.png" class="img-responsive" alt="automations-integrations">
+   </figure>
+  </div>
+    <div class="tab-pane fade" id="sustainability" role="tabpanel" aria-labelledby="sustainability-tab">
+   <p class="hidedesktop">Personalised, preventative digital asset management</p>
+   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+   <figure>
+     <img src="./images/sustainability.png" class="img-responsive" alt="sustainability">
+   </figure>
+  </div>
+    <div class="tab-pane fade" id="reporting-analytics" role="tabpanel" aria-labelledby="reporting-analytics-tab">
+     <p class="hidedesktop">Personalised, preventative digital asset management</p>
+   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+   <figure>
+     <img src="./images/reporting-analytics.png" class="img-responsive" alt="reporting-analytics">
+   </figure>
+  </div>
+</div>
+    </div>
+    <!-- /.col-md-8 -->
+  </div>
+  </div>
+</div>
+<!-- /.container -->
+      </div>
+      <!-- prodcut features section-->
+      <div class="enterprise d-none d-sm-block">
+         <div class="container-fluid">
+            <figure>
+               <img src="./images/about-inconn.png" class="img-responsive" alt="workflow-collaboration">
+            </figure>
+            <div class="enterprise-section">
+               <div class="container">
+                  <div class="centralized-centre">
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/response-time.svg" class="img-responsive" alt="response-time">
+                        </figure>
+                        <p>   Improved response time equipment availability </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/maintenance.svg" class="img-responsive" alt="maintenance">
+                        </figure>
+                        <p>  Seamless & streamlined maintenance management </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/satisfaction.svg" class="img-responsive" alt="satisfaction">
+                        </figure>
+                        <p>  Enhanced service delivery and customer satisfaction </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/inventory.svg" class="img-responsive" alt="inventory">
+                        </figure>
+                        <p>  Optimised and efficient inventory management </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/productivity.svg" class="img-responsive" alt="productivity">
+                        </figure>
+                        <p>  Boosted operations efficacy & Workforce Productivity </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="enterprise d-block d-sm-none">
+         <div class="container">
+            <figure>
+               <img src="./images/mobile-enterprise.png"  class="img-responsive" alt="enterprise">
+            </figure>
+            <div class="enterprise-section">
+               <div class="container">
+                  <div class="centralized-centre">
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/response-time.svg" class="img-responsive" alt="response-time">
+                        </figure>
+                        <p>   Improved response time equipment availability </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/maintenance.svg" class="img-responsive" alt="maintenance">
+                        </figure>
+                        <p>  Seamless & streamlined maintenance management </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/satisfaction.svg" class="img-responsive" alt="satisfaction">
+                        </figure>
+                        <p>  Enhanced service delivery and customer satisfaction </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/inventory.svg" class="img-responsive" alt="inventory">
+                        </figure>
+                        <p>  Optimised and efficient inventory management </p>
+                     </div>
+                     <div class="centralized-center-section">
+                        <figure>
+                           <img src="./images/productivity.svg" class="img-responsive" alt="productivity">
+                        </figure>
+                        <p>  Boosted operations efficacy & Workforce Productivity </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- slogan -->
+      <div class="slogan-text">
+         <div class="container">
+            <h2>Save costs, reduce safety risks, make informed decisions on the go. </h2>
+         </div>
+      </div>
+      <!-- slogan -->
+      <!-- industries section mobile -->
+      <div class="mobile-industry">
+         <div class="container">
+            <h2> Built for</h2>
+            <div class="industry-desktop-mobile">
+               <div class="mobile-industry-type">
+                  <div class="mobile-idustry-img-text">
+                     <figure>
+                        <img src="./images/healthcare.svg" class="img-responsive" alt="healthcare">
+                     </figure>
+                     <h4>Healthcare</h4>
+                  </div>
+                  <p>Digitise and automate your healthcare facility operations to optimise maintenance costs, prevent and predict equipment failures.</p>
+               </div>
+               <div class="mobile-industry-type">
+                  <div class="mobile-idustry-img-text">
+                     <figure>
+                        <img src="./images/manufacturing.svg" class="img-responsive" alt="manufacturing">
+                     </figure>
+                     <h4>Manufacturing</h4>
+                  </div>
+                  <p>Get peak performance from your manufacturing assets, and reduce defects and downtime. Learn how you can create more sustainable operations.</p>
+               </div>
+               <div class="mobile-industry-type">
+                  <div class="mobile-idustry-img-text">
+                     <figure>
+                        <img src="./images/retail.svg" class="img-responsive" alt="retail">
+                     </figure>
+                     <h4>Retail</h4>
+                  </div>
+                  <p>Transform retail operations for the new world. Access data insights from your ecosystem to make accurate decisions and out beat your competition.</p>
+               </div>
+               <div class="mobile-industry-type">
+                  <div class="mobile-idustry-img-text">
+                     <figure>
+                        <img src="./images/hospitality.svg" class="img-responsive" alt="hospitality">
+                     </figure>
+                     <h4>Hospitality</h4>
+                  </div>
+                  <p>Keep everything moving by improving the productivity of your people and assets. Learn how you can manage assets & maintenance and customer demands.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- industries section mobile -->
+      <!-- control assets mobile -->
+      <div class="control-assets-mobile">
+         <div class="container">
+            <div class="control-desktop-mobile">
+               <h3>Take control of your assets  today</h3>
+               <p>Eliminate the sticky note chaos and data silos. Inconn makes it simple to see where everything stands, all in one place.</p>
+               <div>
+                  <button class="btn contact-us" type="submit">Contact Us</button>
+                  <button class="btn get-demo" type="submit">Get Demo</button>
+               </div>
+            </div>
+            <figure>
+               <img src="./images/building.png" class="img-responsive" alt="building">
+            </figure>
+         </div>
+      </div>
+      <!-- control assets mobile -->
+   </main>
+   <footer class="footer-mobile">
+      <div class="container">
+         <div class="footer-mobile-logo">
+            <a href="#"><img src="images/footer-logos.png" alt="logo-img"></a>
+         </div>
+         <div class="email-social-media ">
+            <div class="email-id">
+               <a href="mailto:info@inconn.com">info@inconn.com</a>
+            </div>
+            <div class="mobile-social">
+               <ul class="facebook-linkedin">
+                  <li>
+                     <a href="#"><img src="./images/facebook-mobile.png" class="img-responsive" alt="facebook"></a>
+                  </li>
+                  <li>
+                     <a href="#"><img src="./images/linkedin-mobile.png" class="img-responsive" alt="linkedin"></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="privacy-terms-copyright">
+            <div class="copyrights">
+               <p>All rights reserved. 2023</p>
+            </div>
+            <div class="mobile-privacy-terms">
+               <div class="mobile-privacy">
+                  <ul>
+                     <li>
+                        <a href="#">Privacy Policy</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="mobile-terms-conditions">
+                  <ul>
+                     <li>
+                        <a href="#">T&C</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+       
+$(".product-features .nav-item  p").hide();
+$(".product-features .nav-item  p.first-link").show();
+$(".product-features .nav-item a").click(function() {
+  $(".product-features .nav-item  p.show").hide();
+    $(this).parent().find("p").show();
+  });
+  
+  
+
+                $('.banner-images').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });           
+      });
+      </script>
+</html>
