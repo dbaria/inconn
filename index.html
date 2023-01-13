@@ -224,7 +224,7 @@ p.show {
 
 p.show+p.show {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 140%;
     /* display: flex; */
     color: #fff;
@@ -775,7 +775,7 @@ p.show+p.show {
               margin-right: 16px;
             }
             .centralized-center-section figure {
-              width: 24px;
+              width: 36px;
               height: 32px;
               /*display: inline-block;*/
               }
@@ -1236,7 +1236,7 @@ body{
 .btn.w-100{
    background-color: #1F1E1F;
 }
-.modal-footer a{
+.modal-footer a, .modal-footer a.link{
    color: #ED4D37;
    text-decoration: underline;
 }
@@ -1353,8 +1353,57 @@ textarea.form-control {
 }
 
 }
+.enterprise h6{
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+   -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
+.enterprise h4{
+   text-align: center;
+   font-size: 32px;
+   font-weight: 600;
+   color: #3E3C3E;
+   padding-bottom: 40px;
+   padding-top: 16px;
+}
 
+.enterprise{
+   background-color: #F8F7F8;
+   padding-top: 48px;
+}
+
+.enterprise figure{
+   margin: 0;
+}
+
+.form-row.phone-field span {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  border-right: solid 1.2px #C3C1C3;
+  color: #878287;
+  font-weight: 500;
+}
+
+.form-row.phone-field span img{
+   padding-left: 5px;
+   padding-right: 10px;
+}
+
+.form-row.phone-field{
+   position: relative;
+}
+
+#inputPhone{
+   padding-left: 70px;
+}
+.mobile-privacy-terms{
+   color: #AFACAF;
+}
 
 
 
@@ -1365,7 +1414,7 @@ textarea.form-control {
    <header>
       <div class="navigation-mobile">
          <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#"><img src="images/logo-mobile.png" alt="logo-img"></a>
+            <a class="navbar-brand" href="#"><img src="images/Inconn-Logo.svg" alt="logo-img"></a>
             <div>
                <button class="btn contact-us" type="submit">Contact Us</button>
                <button class="btn get-demo" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
@@ -1384,7 +1433,7 @@ textarea.form-control {
                   <div class="banner-text">
                      <p>EAM Simplified</p>
                      <h1>The Smarter way to manage your assets</h1>
-                     <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise on the go,</span>with real-time data, arming you with faster-informed decisions and eliminating inefficiencies that impact your operational results. Get Demo Now!</p>
+                     <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise on the go,</span> with real-time data and make faster-informed decisions on the go.</p>
                      <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
@@ -1407,7 +1456,7 @@ textarea.form-control {
                <div class="container">
                   <div class="banner-text">
                      <p>EAM Simplified</p>
-                     <h1>Intelligent & connected  asset management </h1>
+                     <h1>Intelligent. connected  asset management </h1>
                      <p class="banner-information">Ready to deploy, easy to customise and simple to use. seamlessly unite your business with <span>intelligent IoT integrations</span> and robust asset connectivity capabilities in real time.</p>
                      <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
@@ -1518,35 +1567,35 @@ textarea.form-control {
     <!-- /.col-md-4 -->
         <div class="col-md-7">
       <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="asset-management" role="tabpanel" aria-labelledby="asset-management-tab">
+  <div class="tab-pane fade show active" id="asset-management item1" role="tabpanel" aria-labelledby="asset-management-tab">
    <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/assets-management.png" class="img-responsive" alt="response-time">
    </figure>
   </div>
-  <div class="tab-pane fade" id="workflow-collaboration" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
+  <div class="tab-pane fade" id="workflow-collaboration item2" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
     <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/workflow-collaboration.png" class="img-responsive" alt="workflow-collaboration">
    </figure>
   </div>
-  <div class="tab-pane fade" id="automation-integrations" role="tabpanel" aria-labelledby="automation-integrations-tab">
+  <div class="tab-pane fade" id="automation-integrations item3" role="tabpanel" aria-labelledby="automation-integrations-tab">
      <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/automations-integrations.png" class="img-responsive" alt="automations-integrations">
    </figure>
   </div>
-    <div class="tab-pane fade" id="sustainability" role="tabpanel" aria-labelledby="sustainability-tab">
+    <div class="tab-pane fade" id="sustainability item4" role="tabpanel" aria-labelledby="sustainability-tab">
    <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/sustainability.png" class="img-responsive" alt="sustainability">
    </figure>
   </div>
-    <div class="tab-pane fade" id="reporting-analytics" role="tabpanel" aria-labelledby="reporting-analytics-tab">
+    <div class="tab-pane fade" id="reporting-analytics item5" role="tabpanel" aria-labelledby="reporting-analytics-tab">
      <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
@@ -1565,7 +1614,9 @@ textarea.form-control {
       <div class="enterprise d-none d-sm-block">
          <div class="container-fluid">
             <figure>
-               <img src="./images/about-inconn.png" class="img-responsive" alt="workflow-collaboration">
+               <h6>ENTERPRISE-GRADE EAM PLATFORM</h6>
+               <h4>Centralised command centre for <br>all your operational needs</h4>
+               <img src="./images/About Inconn.svg" class="img-responsive" alt="workflow-collaboration">
             </figure>
             <div class="enterprise-section">
                <div class="container">
@@ -1730,10 +1781,10 @@ textarea.form-control {
             <div class="mobile-social">
                <ul class="facebook-linkedin">
                   <li>
-                     <a href="#"><img src="./images/facebook-mobile.png" class="img-responsive" alt="facebook"></a>
+                     <a href="https://www.facebook.com/inconnapp/" target="_blank"><img src="./images/facebook-mobile.png" class="img-responsive" alt="facebook"></a>
                   </li>
                   <li>
-                     <a href="#"><img src="./images/linkedin-mobile.png" class="img-responsive" alt="linkedin"></a>
+                     <a href="https://www.linkedin.com/company/inconn/about/" target="_blank"><img src="./images/linkedin-mobile.png" class="img-responsive" alt="linkedin"></a>
                   </li>
                </ul>
             </div>
@@ -1746,14 +1797,14 @@ textarea.form-control {
                <div class="mobile-privacy">
                   <ul>
                      <li>
-                        <a href="#">Privacy Policy</a>
+                        <a>Privacy Policy</a>
                      </li>
                   </ul>
                </div>
                <div class="mobile-terms-conditions">
                   <ul>
                      <li>
-                        <a href="#">T&C</a>
+                        <a>T&C</a>
                      </li>
                   </ul>
                </div>
@@ -1768,7 +1819,7 @@ textarea.form-control {
    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <a class="navbar-brand" href="#"><img src="images/logo-mobile.png" alt="logo-img"></a>
+         <a class="navbar-brand" href="#"><img src="images/Inconn-Logo.svg" alt="logo-img"></a>
        </div>
        <div class="modal-body">
        	<h2>Get Demo</h2>
@@ -1776,22 +1827,26 @@ textarea.form-control {
          <form id="form">
             <div class="form-group">
                <label for="inputName">Name</label>
-               <input type="text" class="form-control" id="inputName" name="Name" placeholder="abc">
+               <input type="text" class="form-control" id="inputName" name="Name" placeholder="Jane Doe">
              </div>
              <div class="form-group">
                <label for="inputEmail">Email Address</label>
                <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="xyz@gmail.com">
              </div>
-            <div class="form-row">
+            <div class="form-row phone-field">
               <div class="form-group col-md-6">
                 <label for="inputPhone">Phone Number</label>
+                <span>+91<img src="images/arrow_drop_down.svg"></span>
                 <input type="text" class="form-control phonenumber" id="inputPhone" name="Phone" placeholder="1234567890">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputTeam">Team Size</label>
                 <select id="inputTeam" class="form-control" name="Team Size">
                   <option selected>1-10</option>
-                  <option>...</option>
+                  <option>50-100</option>
+                  <option>100-1000</option>
+                  <option>1000-3000</option>
+                  <option>5000+</option>
                 </select>
               </div>
             </div>
@@ -1799,12 +1854,12 @@ textarea.form-control {
               <label for="inputcomments">Comments</label>
               <textarea class="form-control" id="inputcomments" name="Comments" rows="3" placeholder="Type your comment here..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100" id="submit">Sign in</button>
+            <button type="submit" class="btn btn-primary w-100" id="submit">Submit</button>
           </form>
    
        </div>
        <div class="modal-footer">
-         <p>By clicking submit you accept our <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a></p>
+         <p>By clicking submit you accept our <a class="link">Privacy Policy</a> and <a class="link">Terms & Conditions</a></p>
        </div>
      </div>
    </div>
@@ -1831,7 +1886,7 @@ $(".product-features .nav-item a").click(function() {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3500,
-            infinite: false,
+            infinite: true,
             arrows: false,
             dots: true,
             pauseOnHover: false,
@@ -1853,7 +1908,7 @@ $(".product-features .nav-item a").click(function() {
         $({ Counter1: 0 }).animate({
   Counter1: $('#total-clients').text()
 }, {
-  duration: 3000,
+  duration: 1000,
   easing: 'swing',
   step: function() {
     $('#total-clients').text(Math.ceil(this.Counter1));
@@ -1863,7 +1918,7 @@ $(".product-features .nav-item a").click(function() {
 $({ Counter2: 0 }).animate({
   Counter2: $('#total-users').text()
 }, {
-  duration: 3000,
+  duration: 1000,
   easing: 'swing',
   step: function() {
     $('#total-users').text(Math.ceil(this.Counter2));
@@ -1873,20 +1928,20 @@ $({ Counter2: 0 }).animate({
 $({ Counter3: 0 }).animate({
   Counter3: $('#real-time-asset').text()
 }, {
-  duration: 3000,
+  duration: 1000,
   easing: 'swing',
   step: function() {
     $('#real-time-asset').text(Math.ceil(this.Counter3));
   }
 });
 
-$({ Counter4: 0 }).animate({
-  Counter4: $('#total-order').text()
+$({ Counter5: 0 }).animate({
+  Counter5: $('#total-order').text()
 }, {
-  duration: 3000,
+  duration: 1000,
   easing: 'swing',
   step: function() {
-    $('#total-order').text(Math.ceil(this.Counter4));
+    $('#total-order').text(Math.ceil(this.Counter5));
   }
 });
 
