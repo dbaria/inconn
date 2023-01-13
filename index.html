@@ -1327,6 +1327,12 @@ textarea.form-control {
     line-height: 140%;
 }
 
+.container-fluid{
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+
  @media (max-width: 767px){
 	.modal-content{
 		padding: 20px;
@@ -1339,7 +1345,15 @@ textarea.form-control {
 	.modal-open .modal{
 		padding-right: 0 !important;
 	}
+   .container-fluid{
+   padding: 15px;
 }
+.control-assets-mobile{
+   padding: 0;
+}
+
+}
+
 
 
 
@@ -1371,7 +1385,7 @@ textarea.form-control {
                      <p>EAM Simplified</p>
                      <h1>The Smarter way to manage your assets</h1>
                      <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise on the go,</span>with real-time data, arming you with faster-informed decisions and eliminating inefficiencies that impact your operational results. Get Demo Now!</p>
-                     <button class="btn btn-success" type="submit">Get Demo</button>
+                     <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
             </div>
@@ -1383,7 +1397,7 @@ textarea.form-control {
                      <p>EAM Simplified</p>
                      <h1>Stay agile. Reduce costs. Drive efficiency.</h1>
                      <p class="banner-information">Transition your maintenance from preventative to <span>predictive asset management</span> effortlessly. Create a hyperconnected business that links people, data, and processes across your business.</p>
-                     <button class="btn btn-success" type="submit">Get Demo</button>
+                     <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
             </div>
@@ -1395,7 +1409,7 @@ textarea.form-control {
                      <p>EAM Simplified</p>
                      <h1>Intelligent & connected  asset management </h1>
                      <p class="banner-information">Ready to deploy, easy to customise and simple to use. seamlessly unite your business with <span>intelligent IoT integrations</span> and robust asset connectivity capabilities in real time.</p>
-                     <button class="btn btn-success" type="submit">Get Demo</button>
+                     <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
             </div>
@@ -1694,7 +1708,7 @@ textarea.form-control {
                <p>Eliminate the sticky note chaos and data silos. Inconn makes it simple to see where everything stands, all in one place.</p>
                <div>
                   <button class="btn contact-us" type="submit">Contact Us</button>
-                  <button class="btn get-demo" type="submit">Get Demo</button>
+                  <button class="btn get-demo" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                </div>
             </div>
             <figure>
@@ -1815,7 +1829,7 @@ $(".product-features .nav-item a").click(function() {
                 $('.banner-images').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3500,
             infinite: false,
             arrows: false,
