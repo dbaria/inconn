@@ -91,12 +91,14 @@
           border: 1px solid #F5F5F5;
           margin-right: 24px;
           width: 126px;
+          display: none;
          }
          .btn.get-demo{
             width: 120px;
             background: #ED4D37;
             border: none;
             margin: 0;
+            font-weight: 700;
          }
          .navigation-mobile .btn.contact-us{
              border: 1px solid #5E5A5E;
@@ -162,6 +164,7 @@
           font-weight: 700;
           font-size: 20px;
           line-height: 140%;
+          height: 64px;
         }
         .banner-images.slick-initialized .slick-slide {
           position: relative;
@@ -185,7 +188,7 @@
         /*product features*/
         .product-features{
           background: #1F1E1F;
-          padding: 92px 0 100px 80px;
+          padding: 92px 0 0px 80px;
           min-height: 745px;
         }
         .product-features h5 {
@@ -718,7 +721,7 @@ p.show+p.show {
             }
             .control-assets-mobile h3{
               font-weight: 700;
-              font-size: 28px;
+              font-size: 40px;
               line-height: 120%;
               letter-spacing: -0.025em;
               color: #535053;
@@ -742,6 +745,7 @@ p.show+p.show {
               line-height: 140%;
               border: 0.559722px solid #5E5A5E;
               padding: 11px 8px;
+              display: none;
             }
             .control-assets-mobile .btn.get-demo{
               width: 120px;
@@ -845,7 +849,7 @@ p.show+p.show {
         }
 
           @media screen and (max-width: 781px) {
-            .product-features .border-section:after {
+           /* .product-features .border-section:after {
                 content: "";
                 position: absolute;
                 background: #3E3C3E;
@@ -853,16 +857,22 @@ p.show+p.show {
                 width: 100%;
                 top: 99px;
                 left: 0;
-            }
+            }*/
             .nav-pills .nav-link.active:after {
                 content: "";
                 position: absolute;
                 background: red;
-                top: 20px;
+                top: 19px;
                 left: 0;
                 height: 1px;
                 width: 100%;
                 background: #FF9B00;
+            }
+            .product-features .border-section {
+                padding: 32px 0 0;
+            }
+            .product-features h5,.nav-pills.flex-column,.hidedesktop,.hidedesktop+.hidedesktop{
+              padding: 0 15px;
             }
 
             .nav-pills.flex-column{
@@ -911,13 +921,21 @@ p.show+p.show {
             .product-features .tab-content figure{
               position: unset;
                width: 100%;
+               margin: 0;
             }
 
             .product-features .tab-content figure img{
               border-radius: 8px;
             }
-             .slogan-text{
-              padding: 32px 16px;
+            .slogan-text{
+              padding: 59px 16px;
+            }
+            .mobile-industry{
+              padding: 32px 0px;
+            }
+            .mobile-industry h2{
+              margin-bottom: 12px;
+          font-size: 20px;
             }
           
              img{
@@ -929,10 +947,11 @@ p.show+p.show {
             }
              /*header css*/
              /*banner css*/
-             .banner-text {
-                max-width: 300px;
-                top: 15%;
+            .banner-text {
+                max-width: 328px;
+                top: inherit;
                 left: 5%;
+                bottom: 31px;
               }
              .banner-text p {
                 margin-bottom: 16px;
@@ -948,18 +967,18 @@ p.show+p.show {
              .banner-text .banner-information {
                 margin: 16px 0 24px;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 140%;
                 letter-spacing: -0.01em;
             }
              .banner-text .btn {
-                padding: 10px;
-                max-width: 105px;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 140%;
-                align-items: center;
-                letter-spacing: -0.01em;
+              padding: 14px 24px;
+	          max-width: 120px;
+	          font-weight: 600;
+	          font-size: 16px;
+	          line-height: 140%;
+	          align-items: center;
+	          letter-spacing: -0.01em;
             }
             .customer-logos img {
                 width: auto;
@@ -977,14 +996,25 @@ p.show+p.show {
               max-height: inherit;
             }
             .smartway-performance .supercharge-performance h2,.smartway-performance .supercharge-performance span,.smartway-text h3{
-              font-size: 22px;
-              margin: 10px 10px 10px 0px;
+              font-size: 28px;
+              margin: 10px 10px 16px 0px;
+            }
+            .smartway-text h3{
+              font-size: 24px;
             }
             .supercharge-text p,.smartway-text p{
-               font-size: 12px;
+               font-size: 14px;
+               margin-bottom: 50px;
+            }
+            .smartway-text p{
+              margin-bottom: 25px;
+            }
+            .smartway-text p+p{
+              margin-bottom: 32px
             }
             .smartway-performance {
-                padding: 35px 0;
+                padding: 0 0 35px 0;
+                background: #fff;
             }
             .client-logos {
                 padding: 20px 0;
@@ -1025,13 +1055,16 @@ p.show+p.show {
                   margin-bottom: 0;
                   min-height: 122px;
               }
-              .clients-total-numbers {
-                  padding: 32px 0;
+               .clients-total-numbers {
+                  padding: 37px 0;
+              }
+              .slogan-text h2 br{
+                display: none;
               }
                                         
-             .slogan-text h2{
+             body .slogan-text h2{
                font-family: greycliff-cf, sans-serif;
-                font-weight: 700;
+                font-weight: 800 !important;
                 font-size: 28px;
                 line-height: 120%;
                 color: #1F1E1F;
@@ -1046,7 +1079,18 @@ p.show+p.show {
              }
              .control-desktop-mobile{
               position: unset;
+              padding: 35px 0;
+              max-width: 100%;
              }
+             .control-assets-mobile h3 {
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0;
+            }
+            .control-assets-mobile p {
+                font-size: 14px;
+                margin: 12px 0 32px;
+            }
 
              .industry-desktop-mobile{
               display: block;
@@ -1057,8 +1101,17 @@ p.show+p.show {
               overflow-x: scroll;
               overflow-y: hidden;
              }
-             .mobile-industry-type {
+               .mobile-industry-type {
                 display: inline-block;
+                min-height: 184px;
+            }
+            .mobile-idustry-img-text h4 {
+                font-weight: 800;
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .mobile-idustry-img-text {
+                margin-bottom: 13px;
             }
             .mobile-industry-type p {
                 white-space: normal;
@@ -1077,14 +1130,19 @@ p.show+p.show {
             padding-bottom: 32px;
             left:0;
             }
-            .centralized-center-section {
+             .centralized-center-section {
                 display: inline-block;
+                min-height: 136px;
+                height: 100%;
+                padding: 24px 16px;
             }
             .centralized-center-section figure {
                 display: block;
             }
             .centralized-center-section p {
                 white-space: normal;
+                margin: 0;
+                min-width: 202px;
             }
             .product-features{
                 min-height: auto;
@@ -1152,10 +1210,30 @@ p.show+p.show {
             .navigation-mobile .btn.contact-us{
                   width: 100px;
             }
-            .navigation-mobile .btn.get-demo{
-              width: 85px;
-              padding: 10px 2px;
+            .navigation-mobile .btn.get-demo {
+                width: 85px;
+                padding: 10px 2px;
             }
+            .calender-btn{
+              display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .calender-btn a{
+              width: 44px;
+                height: 36px;
+                margin-right: 12px
+            }
+            .navigation-mobile .navbar-brand{
+              width: 92px;
+            }
+          	.control-assets-mobile figure {
+              margin: 0;
+              width: 700px;
+              position: absolute;
+              right: 0;
+              bottom: 0px;
+          }
             
         }
 
@@ -1166,6 +1244,9 @@ p.show+p.show {
               font-weight: 700;
               font-size: 36px;
               line-height: 120%;
+          }
+            .slick-dots{
+            display: none !important;
           }
          }
 
@@ -1180,7 +1261,7 @@ p.show+p.show {
 @keyframes spin {
   0% { content:"productivity"; }
   20% { content:"performance"; }
-  40% { content:"efficiancy"; }
+  40% { content:"efficiency"; }
   60% { content:"maintenance"; }
   100% { content:"productivity"; }
 }
@@ -1327,10 +1408,10 @@ textarea.form-control {
     line-height: 140%;
 }
 
-.container-fluid{
+/*.container-fluid{
    padding-left: 0px;
    padding-right: 0px;
-}
+}*/
 
 
  @media (max-width: 767px){
@@ -1350,6 +1431,7 @@ textarea.form-control {
 }
 .control-assets-mobile{
    padding: 0;
+   min-height: 440px;
 }
 
 }
@@ -1405,6 +1487,78 @@ textarea.form-control {
    color: #AFACAF;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 781px){
+  .enterprise .centralized-centre {
+    bottom: 2%;
+    left: 6%;
+}
+.centralized-center-section {
+    padding: 24px 12px;
+    width: 170px;
+    font-size: 14px;
+}
+}
+
+ @media (max-width: 767px){
+
+ .enterprise figure {
+  margin-bottom: 15px;
+}
+.facebook-linkedin li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.enterprise h3{
+  font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+.enterprise  p.title-next{
+  font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #3E3C3E;
+    margin-bottom: 35px;
+}
+.enterprise .flex{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.enterprise .flex h5{
+  text-align: center;
+}
+.enterprise-1 figure,.enterprise-2 figure {
+    margin-bottom: 20px;
+    width: 156px;
+    min-height: 156px;
+}
+.enterprise .plus figure{
+  width: 188px;
+    height: 50px;
+    margin: 16px auto;
+}
+.enterprise-section{
+  margin-top: 60px;
+}
+.form-row.phone-field span img{
+   width: 50%;
+}
+select#inputTeam{
+  background-position: 340px 13px;
+}
+}
+
+
 
 
 
@@ -1415,9 +1569,10 @@ textarea.form-control {
       <div class="navigation-mobile">
          <nav class="navbar navbar-expand-md">
             <a class="navbar-brand" href="#"><img src="images/Inconn-Logo.svg" alt="logo-img"></a>
-            <div>
-               <button class="btn contact-us" type="submit">Contact Us</button>
-               <button class="btn get-demo" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
+            <div class="calender-btn">
+               <!-- <button class="btn contact-us d-none d-sm-inline-block" type="submit">Contact Us</button> -->
+               <a  class="d-block d-sm-none" href="#"><img src="images/calender.svg" alt="logo-img"></a>
+               <button class="btn get-demo " type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
             </div>
          </nav>
       </div>
@@ -1433,30 +1588,30 @@ textarea.form-control {
                   <div class="banner-text">
                      <p>EAM Simplified</p>
                      <h1>The Smarter way to manage your assets</h1>
-                     <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise on the go,</span> with real-time data and make faster-informed decisions on the go.</p>
+                     <p class="banner-information">The asset management platform that helps you tap into your frontline operations to <span>track, monitor and optimise,</span> with real-time data and make faster-informed decisions on the go.</p>
                      <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
             </div>
             <div class="slide">
                <img src="./images/asset-managements.png" class="img-responsive d-none d-sm-block" alt="asset-management">
-               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <img src="./images/asset-managements-mobile.png" class="img-responsive d-block d-sm-none" alt="asset-managements">
                <div class="container">
                   <div class="banner-text">
                      <p>EAM Simplified</p>
                      <h1>Stay agile. Reduce costs. Drive efficiency.</h1>
-                     <p class="banner-information">Transition your maintenance from preventative to <span>predictive asset management</span> effortlessly. Create a hyperconnected business that links people, data, and processes across your business.</p>
+                     <p class="banner-information">Transition your maintenance from preventive to <span>predictive asset management</span> effortlessly. Create a hyperconnected business that links people, data, and processes across your business.</p>
                      <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
                </div>
             </div>
             <div class="slide">
                <img src="./images/intelligent-integration.png" class="img-responsive d-none d-sm-block" alt="intelligent-integration">
-               <img src="./images/track-monitor-mobile.png" class="img-responsive d-block d-sm-none" alt="track-monitor">
+               <img src="./images/intelligent-integration-mobile.png" class="img-responsive d-block d-sm-none" alt="intelligent-integration">
                <div class="container">
                   <div class="banner-text">
                      <p>EAM Simplified</p>
-                     <h1>Intelligent. connected  asset management </h1>
+                     <h1>Intelligent. Connected  asset management </h1>
                      <p class="banner-information">Ready to deploy, easy to customise and simple to use. seamlessly unite your business with <span>intelligent IoT integrations</span> and robust asset connectivity capabilities in real time.</p>
                      <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
                   </div>
@@ -1521,8 +1676,8 @@ textarea.form-control {
                </div>
                <div class="smartway-text">
                   <h3>Elevate your business with IoT connectivity & intelligent automation. </h3>
-                  <p>Amplify your operations with enhanced digital transformation. Designed and developed keeping your people and business in mind.   
-                     Get more out of your resources and assets with less manual efforts. The simple and easy to use Interface makes it ridiculously easy to manage every last detail of your asset lifecycle.
+                  <p>Amplify your operations with enhanced digital transformation. Designed and developed keeping your people and business in mind.  </p> 
+                    <p> Get more out of your resources and assets with less manual efforts. The simple and easy to use Interface makes it ridiculously easy to manage every last detail of your asset lifecycle.
                   </p>
                </div>
             </div>
@@ -1567,35 +1722,35 @@ textarea.form-control {
     <!-- /.col-md-4 -->
         <div class="col-md-7">
       <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="asset-management item1" role="tabpanel" aria-labelledby="asset-management-tab">
+  <div class="tab-pane fade show active" id="asset-management" role="tabpanel" aria-labelledby="asset-management-tab">
    <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/assets-management.png" class="img-responsive" alt="response-time">
    </figure>
   </div>
-  <div class="tab-pane fade" id="workflow-collaboration item2" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
+  <div class="tab-pane fade" id="workflow-collaboration" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
     <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/workflow-collaboration.png" class="img-responsive" alt="workflow-collaboration">
    </figure>
   </div>
-  <div class="tab-pane fade" id="automation-integrations item3" role="tabpanel" aria-labelledby="automation-integrations-tab">
+  <div class="tab-pane fade" id="automation-integrations" role="tabpanel" aria-labelledby="automation-integrations-tab">
      <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/automations-integrations.png" class="img-responsive" alt="automations-integrations">
    </figure>
   </div>
-    <div class="tab-pane fade" id="sustainability item4" role="tabpanel" aria-labelledby="sustainability-tab">
+    <div class="tab-pane fade" id="sustainability" role="tabpanel" aria-labelledby="sustainability-tab">
    <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
      <img src="./images/sustainability.png" class="img-responsive" alt="sustainability">
    </figure>
   </div>
-    <div class="tab-pane fade" id="reporting-analytics item5" role="tabpanel" aria-labelledby="reporting-analytics-tab">
+    <div class="tab-pane fade" id="reporting-analytics" role="tabpanel" aria-labelledby="reporting-analytics-tab">
      <p class="hidedesktop">Personalised, preventative digital asset management</p>
    <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
    <figure>
@@ -1656,11 +1811,62 @@ textarea.form-control {
             </div>
          </div>
       </div>
-      <div class="enterprise d-block d-sm-none">
-         <div class="container">
+          <div class="enterprise d-block d-sm-none">
+        <div class="container">
+           <h3>Enterprise-grade EAM Platform</h3>
+           <p class="title-next">Centralised command centre for all operational needs</p>
+           <div class="flex">
+            <div class="enterprise-1">
+              <figure>
+                <img src="images/asset-mamangement.svg" class="img-responsive" alt="asset-mamangement">
+              </figure>
+              <h5>Asset Management</h5>
+            </div>
+            <div class="enterprise-2">
+              <figure>
+                <img src="images/inventory-management.svg" class="img-responsive" alt="inventory-management">
+              </figure>
+              <h5>Inventory Management</h5>
+            </div>
+           </div>
+           <div class="plus">
             <figure>
-               <img src="./images/mobile-enterprise.png"  class="img-responsive" alt="enterprise">
-            </figure>
+                <img src="images/connector.svg" class="img-responsive" alt="connector">
+              </figure>
+           </div>
+                <div class="flex">
+            <div class="enterprise-1">
+              <figure>
+                <img src="images/cmms.svg" class="img-responsive" alt="cmms">
+              </figure>
+              <h5>CMMS</h5>
+            </div>
+            <div class="enterprise-2">
+              <figure>
+                <img src="images/helpdesk.svg" class="img-responsive" alt="helpdesk">
+              </figure>
+              <h5>Helpdesk &Support</h5>
+            </div>
+           </div>
+             <div class="plus">
+            <figure>
+                <img src="images/connector.svg" class="img-responsive" alt="connector">
+              </figure>
+           </div>
+                <div class="flex">
+            <div class="enterprise-1">
+              <figure>
+                <img src="images/workforce-managment.svg" class="img-responsive" alt="workforce-managment">
+              </figure>
+              <h5>Workforce Management</h5>
+            </div>
+            <div class="enterprise-2">
+              <figure>
+                <img src="images/iot.svg" class="img-responsive" alt="iot">
+              </figure>
+              <h5>Automated Monitoring & Control using IoT</h5>
+            </div>
+           </div>
             <div class="enterprise-section">
                <div class="container">
                   <div class="centralized-centre">
@@ -1702,7 +1908,7 @@ textarea.form-control {
       <!-- slogan -->
       <div class="slogan-text">
          <div class="container">
-            <h2>Save costs, reduce safety risks, make<br> informed decisions on the go. </h2>
+            <h2 style="font-weight:700">Save costs, reduce safety risks, make<br> informed decisions on the go. </h2>
          </div>
       </div>
       <!-- slogan -->
@@ -1831,7 +2037,7 @@ textarea.form-control {
              </div>
              <div class="form-group">
                <label for="inputEmail">Email Address</label>
-               <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="xyz@gmail.com">
+               <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="name@email.com">
              </div>
             <div class="form-row phone-field">
               <div class="form-group col-md-6">
@@ -1905,45 +2111,78 @@ $(".product-features .nav-item a").click(function() {
             }]
         });       
         
-        $({ Counter1: 0 }).animate({
-  Counter1: $('#total-clients').text()
-}, {
-  duration: 1000,
-  easing: 'swing',
-  step: function() {
-    $('#total-clients').text(Math.ceil(this.Counter1));
-  }
-});
+//         $({ Counter1: 0 }).animate({
+//   Counter1: $('#total-clients').text()
+// }, {
+//   duration: 1000,
+//   easing: 'swing',
+//   step: function() {
+//     $('#total-clients').text(Math.ceil(this.Counter1));
+//   }
+// });
 
-$({ Counter2: 0 }).animate({
-  Counter2: $('#total-users').text()
-}, {
-  duration: 1000,
-  easing: 'swing',
-  step: function() {
-    $('#total-users').text(Math.ceil(this.Counter2));
-  }
-});
+// $({ Counter2: 0 }).animate({
+//   Counter2: $('#total-users').text()
+// }, {
+//   duration: 1000,
+//   easing: 'swing',
+//   step: function() {
+//     $('#total-users').text(Math.ceil(this.Counter2));
+//   }
+// });
 
-$({ Counter3: 0 }).animate({
-  Counter3: $('#real-time-asset').text()
-}, {
-  duration: 1000,
-  easing: 'swing',
-  step: function() {
-    $('#real-time-asset').text(Math.ceil(this.Counter3));
-  }
-});
+// $({ Counter3: 0 }).animate({
+//   Counter3: $('#real-time-asset').text()
+// }, {
+//   duration: 1000,
+//   easing: 'swing',
+//   step: function() {
+//     $('#real-time-asset').text(Math.ceil(this.Counter3));
+//   }
+// });
 
-$({ Counter5: 0 }).animate({
-  Counter5: $('#total-order').text()
-}, {
-  duration: 1000,
-  easing: 'swing',
-  step: function() {
-    $('#total-order').text(Math.ceil(this.Counter5));
-  }
-});
+// $({ Counter5: 0 }).animate({
+//   Counter5: $('#total-order').text()
+// }, {
+//   duration: 1000,
+//   easing: 'swing',
+//   step: function() {
+//     $('#total-order').text(Math.ceil(this.Counter5));
+//   }
+// });
+
+// $.fn.jQuerySimpleCounter = function( options ) {
+// 	    var settings = $.extend({
+// 	        start:  0,
+// 	        end:    100,
+// 	        easing: 'swing',
+// 	        duration: 400,
+// 	        complete: ''
+// 	    }, options );
+
+// 	    var thisElement = $(this);
+
+// 	    $({count: settings.start}).animate({count: settings.end}, {
+// 			duration: settings.duration,
+// 			easing: settings.easing,
+// 			step: function() {
+// 				var mathCount = Math.ceil(this.count);
+// 				thisElement.text(mathCount);
+// 			},
+// 			complete: settings.complete
+// 		});
+// 	};
+
+//    // $('#total-order').jQuerySimpleCounter({end: 68000,duration: 1500});
+//    $('#total-clients').jQuerySimpleCounter({end: 25,duration: 1000});
+// $('#total-users').jQuerySimpleCounter({end: 500,duration: 1500});
+// $('#real-time-asset').jQuerySimpleCounter({end: 3000,duration: 2000});
+// $('#total-order').jQuerySimpleCounter({end: 68000,duration: 2500});
+
+
+
+
+
 
 const form = document.querySelector("#form")
    const submitButton = document.querySelector("#submit")
@@ -1974,6 +2213,39 @@ const form = document.querySelector("#form")
    })
 
       });
+
+      $(window).on('load', function() {
+ // code here
+ $.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 100,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+            if(mathCount > 65000 && mathCount < 68000){ mathCount = 68000; }
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+   // $('#total-order').jQuerySimpleCounter({end: 68000,duration: 1500});
+   $('#total-clients').jQuerySimpleCounter({end: 25,duration: 1000});
+$('#total-users').jQuerySimpleCounter({end: 500,duration: 1500});
+$('#real-time-asset').jQuerySimpleCounter({end: 3000,duration: 2000});
+$('#total-order').jQuerySimpleCounter({end: 68000,duration: 2500});
+
+});
 
       
       </script>
