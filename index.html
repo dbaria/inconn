@@ -1558,6 +1558,17 @@ select#inputTeam{
 }
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav-pills .nav-link.active::after{
+  display: none;
+}
+
+
+
 
 
 
@@ -1687,8 +1698,15 @@ select#inputTeam{
       <!-- prodcut features section-->
       <div class="product-features">
  <div class="container-fluid">
-  <div class="border-section">
+  <div class="border-section" style="display: none;">
      <h5>Product FEATURES</h5>
+     <div class="trigger" style="position: absolute;
+     height: 38px;
+     width: 2px;
+     background: #FF9B00;
+     left: -20px;
+     z-index: 1;
+     "></div>
   <div class="row">
     <div class="col-md-5 mb-3">
         <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
@@ -1713,7 +1731,7 @@ select#inputTeam{
     <p class="show">Integrate AI & IoT capabilities and take your digital transformation to new heights with empowered assets, people and processes. Reduce utility consumption and environmental footprint, cut costs and support ESG initiatives and contribute towards making the world better.</p>
   </li>
     <li class="nav-item">
-    <a class="nav-link" id="reporting-analytics-tab" data-toggle="tab" href="#reporting-analytics" role="tab" aria-controls="reporting-analytics" aria-selected="false">Automations & Integrations</a>
+    <a class="nav-link" id="reporting-analytics-tab" data-toggle="tab" href="#reporting-analytics" role="tab" aria-controls="reporting-analytics" aria-selected="false">Reporting & Analytics</a>
     <p class="show">Visualise your entire operations with 360° data</p>
     <p class="show">Gain holistic visibility with custom reports and dashboards to unlock insights - save cost, reduce risks and inefficiencies impacting your business. Predict and prevent downtimes and unexpected shutdowns, take action, be agile and streamline your processes for better outcomes. </p>
   </li>
@@ -1762,6 +1780,9 @@ select#inputTeam{
     <!-- /.col-md-8 -->
   </div>
   </div>
+
+
+
 </div>
 <!-- /.container -->
       </div>
@@ -2075,8 +2096,8 @@ select#inputTeam{
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-      <script type="text/javascript">
-      $(document).ready(function(){
+      <script type="text/javascript"> 
+      $(document).ready(function(){ 
        
 $(".product-features .nav-item  p").hide();
 $(".product-features .nav-item  p.first-link").show();
@@ -2111,77 +2132,106 @@ $(".product-features .nav-item a").click(function() {
             }]
         });       
         
-//         $({ Counter1: 0 }).animate({
-//   Counter1: $('#total-clients').text()
-// }, {
-//   duration: 1000,
-//   easing: 'swing',
-//   step: function() {
-//     $('#total-clients').text(Math.ceil(this.Counter1));
-//   }
-// });
+let cnt = 40;
+let cntUP;
+let secHeight = jQuery('.product-features #myTab').height(); console.log("secheight",Math.ceil(secHeight));
+let amtab = $('#asset-management-tab').offset(); console.log("asset",Math.ceil(amtab.top));
+let wctab = $('#workflow-collaboration-tab').offset(); console.log("workflow",Math.ceil(wctab.top));
+let aitab = $('#automation-integrations-tab').offset(); console.log("automation",Math.ceil(aitab.top));
+let stab = $('#sustainability-tab').offset(); console.log("sustainability",Math.ceil(stab.top));
+let direction;
 
-// $({ Counter2: 0 }).animate({
-//   Counter2: $('#total-users').text()
-// }, {
-//   duration: 1000,
-//   easing: 'swing',
-//   step: function() {
-//     $('#total-users').text(Math.ceil(this.Counter2));
-//   }
-// });
+$("product-features .trigger").css("top",amtab.top);
+$(".nav-item a").attr('lock','true');
+  jQuery('.product-features').bind('DOMMouseScroll', function(e){
+    
+  if(e.originalEvent.detail > 0) {
+            //scroll down
+           // console.log('Down');
+           
+           
+           if(secHeight < 570){ 
+            
+            cnt=cnt+10;
+           $(".trigger").css("top", cnt);
 
-// $({ Counter3: 0 }).animate({
-//   Counter3: $('#real-time-asset').text()
-// }, {
-//   duration: 1000,
-//   easing: 'swing',
-//   step: function() {
-//     $('#real-time-asset').text(Math.ceil(this.Counter3));
-//   }
-// });
+    if(cnt == 40){
+    $('.nav-item a[href="#asset-management"]').tab('show');
+    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');   
+    $('.nav-item a[href="#reporting-analytics"]').attr('lock','false');
+    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');     
+    // $('.nav-item a[href="#automation-integrations"]').attr('lock','true');
+    // $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');
+    // $('.nav-item a[href="#sustainability"]').attr('lock','true');
+    }
+    else if(cnt == 300 && $('.nav-item a[href="#workflow-collaboration"]').attr('lock') == 'false'){
+    $('.nav-item a[href="#workflow-collaboration"]').tab('show');
+    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'none');   
+    $('.nav-item a[href="#asset-management"]').attr('lock','false');
+    }
+    else if(cnt == 430){
+      $('.nav-item a[href="#automation-integrations"]').tab('show');
+    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');    
+    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','false');
+    }
+    else if(cnt == 500){
+      $('.nav-item a[href="#sustainability"]').tab('show');
+    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'none');  
+    $('.nav-item a[href="#automation-integrations"]').attr('lock','false');  
+    }   
+    else if(cnt == 570){
+      $('.nav-item a[href="#reporting-analytics"]').tab('show');
+    $('.nav-item a[href="#reporting-analytics"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'none');    
+    $('.nav-item a[href="#sustainability"]').attr('lock','false'); 
+    }
 
-// $({ Counter5: 0 }).animate({
-//   Counter5: $('#total-order').text()
-// }, {
-//   duration: 1000,
-//   easing: 'swing',
-//   step: function() {
-//     $('#total-order').text(Math.ceil(this.Counter5));
-//   }
-// });
+           }
+        }
+        else {
+            //scroll up
+            // console.log('Up');
+            
+            if(cnt !== 40){
+              
+            cnt=cnt-10; 
+            $(".trigger").css("top", cnt);
+    if(cnt == 240 && $('.nav-item a[href="#sustainability"]').attr('lock') == 'false'){
+    $('.nav-item a[href="#sustainability"]').tab('show');
+    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#reporting-analytics"]').parent().children("p.show").css('display', 'none');   
+    // $('.nav-item a[href="#sustainability"]').attr('lock','true');
+    }
+    else if(cnt == 180 && $('.nav-item a[href="#automation-integrations"]').attr('lock') == 'false'){    
+      $('.nav-item a[href="#automation-integrations"]').tab('show');
+    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'none');
+    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');     
+    }
+    else if(cnt == 110 && $('.nav-item a[href="#workflow-collaboration"]').attr('lock') == 'false'){    
+      $('.nav-item a[href="#workflow-collaboration"]').tab('show');
+    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'none');   
+    // $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');  
+    }
+    else if(cnt == 40 && $('.nav-item a[href="#asset-management"]').attr('lock') == 'false'){    
+      $('.nav-item a[href="#asset-management"]').tab('show');
+    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'block');
+    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');     
+    }
+            }
+        }
 
-// $.fn.jQuerySimpleCounter = function( options ) {
-// 	    var settings = $.extend({
-// 	        start:  0,
-// 	        end:    100,
-// 	        easing: 'swing',
-// 	        duration: 400,
-// 	        complete: ''
-// 	    }, options );
+        //prevent page fom scrolling
+        return false;
+//$('body').addClass('stop-scrolling');
+    
 
-// 	    var thisElement = $(this);
-
-// 	    $({count: settings.start}).animate({count: settings.end}, {
-// 			duration: settings.duration,
-// 			easing: settings.easing,
-// 			step: function() {
-// 				var mathCount = Math.ceil(this.count);
-// 				thisElement.text(mathCount);
-// 			},
-// 			complete: settings.complete
-// 		});
-// 	};
-
-//    // $('#total-order').jQuerySimpleCounter({end: 68000,duration: 1500});
-//    $('#total-clients').jQuerySimpleCounter({end: 25,duration: 1000});
-// $('#total-users').jQuerySimpleCounter({end: 500,duration: 1500});
-// $('#real-time-asset').jQuerySimpleCounter({end: 3000,duration: 2000});
-// $('#total-order').jQuerySimpleCounter({end: 68000,duration: 2500});
-
-
-
-
+    });
 
 
 const form = document.querySelector("#form")
@@ -2244,6 +2294,8 @@ const form = document.querySelector("#form")
 $('#total-users').jQuerySimpleCounter({end: 500,duration: 1500});
 $('#real-time-asset').jQuerySimpleCounter({end: 3000,duration: 2000});
 $('#total-order').jQuerySimpleCounter({end: 68000,duration: 2500});
+
+
 
 });
 
