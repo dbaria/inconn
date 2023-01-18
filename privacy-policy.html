@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>inconn</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.typekit.net/ltj8jlw.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+      <style type="text/css">
+        /* @font-face {
+         font-family: "greycliffcf-bold";
+         src: url("../fonts/greycliffcf-bold.eot");
+         }
+         @font-face {
+         font-family: "greycliffcf-regular";
+         src: url("../fonts/greycliffcf-regular.eot");
+         } */
+        body{
+          color: #000;
+          line-height: 24px;
+          letter-spacing: 0;
+          box-sizing: border-box;
+         font-family: greycliff-cf,sans-serif;
+
+        }
+     
+         h1{
+          font-size: 56px;
+         }
+         h2{
+         font-size: 48px;
+         }
+         h3{
+          font-size: 40px;
+         }
+         h4,p{
+          font-size: 20px;
+         }
+         h5{
+          font-size: 16px;
+         }
+         button:focus:not(:focus-visible) {
+              outline: 0;
+              box-shadow: none;
+          }
+          ul{
+            list-style: none;
+            padding: 0;
+          }
+         .bg-grey{
+            background-color: #F8F7F8;
+         }
+         /*header css*/
+         .navbar{
+           /*background-color: #1F1E1F !important;*/
+           padding: 24px 80px;
+         }
+         .navbar-dark .navbar-brand{
+            margin-right: 65px;
+         }
+
+        .navbar-dark .navbar-nav .nav-link {
+          font-family: 'greycliffcf-regular', Arial, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          display: block;
+          color:#fff;
+          margin-right: 24px;
+         }
+         .navbar-dark .navbar-nav .nav-link:focus,
+          .navbar-dark .navbar-nav .nav-link:hover{
+            color:#fff;
+         }
+         .navbar .btn{
+          color:#F5F5F5;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 4px;
+         }
+         .btn.contact-us{
+          font-weight: 600;
+          line-height: 140%;
+          background: transparent;
+          border: 1px solid #F5F5F5;
+          margin-right: 24px;
+          width: 126px;
+          display: none;
+         }
+         .btn.get-demo{
+            width: 120px;
+            background: #ED4D37;
+            border: none;
+            margin: 0;
+            font-weight: 700;
+         }
+         .navigation-mobile .btn.contact-us{
+             border: 1px solid #5E5A5E;
+            color: #5E5A5E;
+           }
+           .navigation-mobile .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           }
+         /*header css*/
+
+         /*banner css*/
+         .banner-text{
+          position: absolute;
+          top: 15%;
+          left: 5%;
+          max-width: 600px;
+          width: 100%;
+         }
+         .banner-text h1{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 120%;
+          background: linear-gradient(229.19deg, #FF9B00 -20.45%, #ED4D37 89.52%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 16px 0 24px;
+          letter-spacing: -0.02em;
+         }
+        .banner-text p{
+          font-style: normal;
+          color: #fff;
+          margin-bottom: 15px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.065em;
+          margin: 0;
+        }
+        .banner-text p span{
+          color:#F69C38;
+        }
+
+         .banner-text .banner-information{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: #fff;
+            margin-bottom: 55px;
+            letter-spacing: -0.01em;
+         }
+         .banner-text .btn{
+          background: #FFFFFF;
+          box-shadow: 0px 4px 12px rgb(39 39 39 / 48%);
+          max-width: 170px;
+          border: none;
+          border-radius: 0;
+          color: #1F1E1F;
+          width: 100%;
+          padding: 10px 20px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+          height: 64px;
+        }
+        .banner-images.slick-initialized .slick-slide {
+          position: relative;
+        }
+         .banner-images.slider .slick-slide img{
+          width: 100%;
+         }
+         /*banner css*/
+         /*client logo section css*/
+         .customer-logos img {
+            max-width: 180px;
+            margin: 0 auto;
+        }
+        .client-logos{
+          padding: 40px 0;
+        }
+        .client-logos p{
+          margin-bottom: 45px
+        }
+        /*client logo section css*/
+        /*product features*/
+        .product-features{
+          background: #1F1E1F;
+          padding: 65px 0 0px 80px;
+          min-height: 745px;
+        }
+        .product-features h5 {
+          font-weight: 600;
+          line-height: 140%;
+          letter-spacing: 0.065em;
+          text-transform: uppercase;
+          color: #fff;
+          text-align: left;
+          padding-top: 50px;
+          margin-bottom: 24px;
+      }
+      .nav.nav-pills{
+        max-width: 480px;
+    width: 100%;
+      }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p.show {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 132%;
+    color: #fff;
+    margin: 12px 0;
+    letter-spacing: -0.025em;
+}
+
+p.show+p.show {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* display: flex; */
+    color: #fff;
+    letter-spacing: -0.01em;
+}
+
+
+
+        /*product features*/
+         .slogan-text{
+              background: #F69C38;
+              padding: 64px 0;
+              text-align: center;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 120%;
+              letter-spacing: -0.03em;
+             }
+         /*footer css*/
+         footer.bg-grey{
+          padding: 69px 0 18px;
+         }
+         footer .socialmedia-links{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+         }
+         .links-socialmedia-icons .navbar-nav{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+         }
+         .links-socialmedia-icons .navbar-nav .nav-link {
+            padding-right: 0;
+            padding-left: 0;
+            color: #535053;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            margin-right: 24px;
+          }
+          .links-socialmedia-icons .navbar-nav .nav-item:last-child .nav-link{
+            margin: 0; 
+          }
+          .facebook-linkedin{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+          }
+          .facebook-linkedin  li{
+            max-width: 48px;
+            width: 100%;
+            margin-right: 12px;
+          }
+          .facebook-linkedin  li:last-child {
+            margin-right: 0;
+          }
+          .facebook-linkedin li a {
+              display: block;
+              width: 48px;
+              height: 48px;
+          }
+          .facebook-linkedin li a img{
+            width: 100%;
+          }
+          footer .copyrights{
+            margin-top: 80px
+          }
+         footer .copyrights  p{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #20484F;
+            margin: 0;
+         }
+         /*footer css*/
+
+         /*tabs to accordion css*/
+          
+
+          .product-features .tabs_wrapper {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            background: transparent;
+          }
+
+          .product-features ul.tabs {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            z-index: 10;
+            margin: 0;
+            padding: 80px 0;
+            width: 50%;
+            min-width: 175px;
+            list-style: none;
+            -ms-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: none;
+          }
+           .product-features ul.tabs li {
+              margin: 0;
+              cursor: pointer;
+              padding: 0;
+              line-height: 31px;
+              color: white;
+              text-align: left;
+              font-weight: bold;
+              background-color: #666;
+              background: transparent;
+              -ms-transition: all 0.3s ease;
+              -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+          }
+           .product-features ul.tabs li a{
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+            color: #5E5A5E;
+          }
+          .product-features ul.tabs li.active a {
+              background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+          }
+           .product-features ul.tabs li p{
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              margin: 20px 0 12px;
+              max-width: 477px;
+              letter-spacing: -0.01em;
+              width: 100%;
+            }
+            .product-features ul.tabs li p+p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              max-width: 477px;
+              width: 100%;
+              letter-spacing: -0.01em;
+            }
+            .small-img {
+              width: 200px;
+              display: none;
+            }
+          .tab_container {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            z-index: 20;
+            left: 0;
+            width: 46%;
+            min-width: 10px;
+            text-align: left;
+            background: transparent;
+            border-radius: 12px;
+            box-shadow: none;
+          }
+
+          .tab_content {
+            padding: 20px;
+            height: 100%;
+            display: none;
+          }
+
+          .tab_drawer_heading {
+            display: none;
+          }
+           .product-features img{
+            width: 100%;
+          }
+           /*tabs to accordion css*/
+           /*smartway css*/
+      .smartway-performance .supercharge-performance,.smartway{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+      .supercharge-text {
+        max-width: 608px;
+        width: 100%;
+      }
+       .supercharge-text p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+      }
+       .smartway-performance .supercharge-performance h2{
+        margin-top: 25px;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+       }
+       .smartway-performance .supercharge-performance span{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       }
+       .smartway-performance{
+        padding: 65px 0;
+       }
+       .supercharge-performance-img figure{
+          max-width: 551px;
+          width: 100%;
+          max-height: 320px;
+       }
+       .supercharge-performance-img figure img,.smartway-img figure img{
+          width: 100%;
+          margin: 0 auto;
+          height: 100%;
+       }
+       .smartway{
+        align-items: center;
+       }
+       .smartway-text{
+          max-width: 577px;
+          width: 100%;
+       }
+       .smartway-text h3{
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 120%;
+          margin-bottom: 24px;
+          letter-spacing: -0.025em;
+       }
+       .smartway-text p{
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+       }
+       .smartway-img figure{
+          max-width: 609px;
+          width: 100%;
+          max-height: 480px;
+       }
+        /*smartway css*/
+        .industries-type{
+          background: linear-gradient(180deg, #1F1E1F 26.48%, #3E3C3E 100%);
+        }
+        .industry-information{
+          position: relative;
+          padding-top: 65px;
+        }
+        .industry-information figure.factory-img{
+            position: absolute;
+            width: 265px;
+            left: 85px;
+            top: 30px;
+        }
+        
+        .industry-information figure.factory-img img{ width: 100%; }
+        .industry-data{
+          width: 307px;
+          height: 226px;
+          background: #3E3C3E;
+          padding: 38px 24px;
+          margin-right: 24px;
+        }
+
+        .industry-data figure{
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+        }
+        .industry-data h4{
+          display: inline-block;
+          vertical-align: middle;
+          color: #fff;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+          margin: 0!important;
+        }
+        .industry-data p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #fff;
+          max-width: 259px;
+          letter-spacing: -0.01em;
+          width: 100%;
+        }
+
+        .industries-info{
+          margin-left: 350px;
+        }
+        .industries-info h4{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 120%;
+          color: #fff;
+          margin: 0;
+          margin-bottom: 32px;
+        }
+        .asset-control{
+            max-width: 461px;
+            padding: 56px 48px;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        .asset-control h2{
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 120%;
+          color: #000;
+          letter-spacing: -0.025em;
+        }
+        .asset-control p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            margin: 16px 0;
+            letter-spacing: -0.01em;
+        }
+        .asset-control .btn.contact-us{
+          border: 1px solid #535053;
+        }
+        .asset-control .btn.get-demo{
+          color: #fff;
+        }
+        .control-assest{
+          position: relative;
+          padding: 250px 0px 105px 35px;
+        }
+        .control-assest figure.buildings{
+          position: absolute;
+          width: 200px;
+          bottom: -15px;
+          right: 250px;
+        }
+        .control-assest figure.arrow{
+          width: 850px;
+          left: 0;
+          top: -5px;
+          right: inherit;
+          position: absolute;
+        }
+         .control-assest figure.arrow img,.control-assest figure.buildings img{
+          width: 100%;
+        }
+        .clients-total-numbers{
+          text-align: center;
+          padding: 41px 0;
+        }
+
+        .enterprise figure img{
+          width: 100%;
+          margin: 0 auto;
+        }
+        .footer-mobile{
+              background: #1F1E1F;
+              padding: 35px 0 35px;
+            }
+            .footer-mobile-logo a{
+              display: block;
+              max-width: 74px;
+              width: 100%;
+            }
+            .email-social-media {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 22px 0 24px;
+            }
+             .email-social-media .email-id a{
+              font-style: normal;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 120%;
+              color: #fff;
+            }
+            .copyrights  p{
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 150%;
+              color: #AFACAF;
+            }
+            footer .copyrights{
+              margin: 0;
+            }
+            footer .copyrights p{
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              color: #AFACAF;
+            }
+            .mobile-privacy a,.mobile-terms-conditions a{
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+              color: #AFACAF;
+            }
+
+            .privacy-terms-copyright{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-top: 1px solid #fff;
+              padding-top: 24px;
+            }
+            .mobile-privacy, .mobile-terms-conditions {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 32px;
+            }
+            .mobile-privacy li {
+              display: inline-block;
+              vertical-align: top;
+            }
+            .mobile-terms-conditions{
+              margin: 0;
+            }
+            .mobile-idustry-img-text figure{
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0;
+            }
+            .mobile-idustry-img-text figure img{
+                width: 100%;
+            }
+            .mobile-idustry-img-text h4{
+              display: inline-block;
+              vertical-align: middle;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+              color: #3E3C3E;
+            }
+            .mobile-industry-type {
+                padding: 32px 20px;
+                background: #F8F7F8;
+                border-radius: 4px;
+                margin-right: 24px;
+                margin-bottom: 0;
+                width: 302px;
+                min-height: 226px;
+              }
+            .mobile-industry-type p{
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 140%;
+              color: #3E3C3E;
+              letter-spacing: -0.01em;
+            }
+            .mobile-industry {
+              padding: 68px 0 56px;
+            }
+            .mobile-industry h2 {
+              font-weight: 700;
+              font-size: 32px;
+              color: #1F1E1F;
+              line-height: 120%;
+              margin-bottom: 24px;
+            }
+            .industry-desktop-mobile{
+              display: flex;
+              align-items: center;
+            }
+            .mobile-idustry-img-text{
+              margin-bottom: 18px;
+            }
+            .control-assets-mobile h3{
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 120%;
+              letter-spacing: -0.025em;
+              color: #535053;
+              margin: 0;
+            }
+
+            .control-assets-mobile p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              margin: 16px 0 42px;
+              letter-spacing: -0.01em;
+              color: #535053;
+            }
+            .control-assets-mobile figure{
+              margin: 0;
+            }
+            .control-assets-mobile .btn.contact-us{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 140%;
+              border: 0.559722px solid #5E5A5E;
+              padding: 11px 8px;
+              display: none;
+            }
+            .control-assets-mobile .btn.get-demo{
+              width: 120px;
+              color: #fff;
+              font-weight: 800;
+              font-size: 16px;
+              line-height: 140%;
+              padding: 12px 20px;
+              letter-spacing: -0.01em;
+            }
+            .control-assets-mobile{
+              position: relative;
+              background: #F8F7F8;
+              padding: 65px 0 0;
+            }
+            .control-assets-mobile figure img{
+              width: 100%;
+            }
+            .control-desktop-mobile{
+              max-width: 365px;
+              position: absolute;
+              top: 65px;
+            }
+            .centralized-center-section{
+              padding: 24px 12px;
+              width: 228px;
+              height: 156px;
+              background: #fff;
+              box-shadow: 0px 4px 12px rgb(157 157 157 / 12%);
+              border-radius: 8px;
+              margin-right: 16px;
+            }
+            .centralized-center-section figure {
+              width: 36px;
+              height: 32px;
+              /*display: inline-block;*/
+              }
+             .centralized-center-section p{
+              display: inline-block; 
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 140%;
+              letter-spacing: -0.01em;
+              color: #3E3C3E;
+            }
+            .enterprise{
+              position: relative;
+            }
+            .enterprise .centralized-centre{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 6%;
+                left: 10%;
+            }
+            .hidedesktop{
+              display:none!important;
+            }
+            .nav-pills .nav-link{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 28px;
+              line-height: 120%;
+              color: #535053;
+              padding: 0;
+              margin-top: 32px;
+            }
+            .nav-pills .nav-link#asset-management-tab{
+              margin: 0;
+            }
+            .product-features .tab-content figure{
+              position: absolute;
+             width: 725px;
+            right: 0;
+            top: -135px;
+            }
+            .product-features .border-section{
+              position: relative;
+            }
+            .product-features .border-section:after {
+              content: "";
+              position: absolute;
+              background: #3E3C3E;
+              height: 84%;
+              width: 1px;
+              top: 0;
+              left: -20px;
+          }
+          .nav-pills .nav-link{
+            position: relative;
+          }
+          .nav-pills .nav-link.active:after {
+            content: "";
+            position: absolute;
+            background: red;
+            top: 0;
+            left: -19px;
+            height: 120%;
+            width: 1px;
+            background: #FF9B00;
+        }
+
+          @media screen and (max-width: 781px) {
+           /* .product-features .border-section:after {
+                content: "";
+                position: absolute;
+                background: #3E3C3E;
+                height: 1px;
+                width: 100%;
+                top: 99px;
+                left: 0;
+            }*/
+            .nav-pills .nav-link.active:after {
+                content: "";
+                position: absolute;
+                background: red;
+                top: 19px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: #FF9B00;
+            }
+            .product-features .border-section {
+                padding: 32px 0 0;
+            }
+            .product-features h5,.nav-pills.flex-column,.hidedesktop,.hidedesktop+.hidedesktop{
+              padding: 0 15px;
+            }
+
+            .nav-pills.flex-column{
+              flex-direction:row!important;
+              display: block;
+              scroll-behavior: smooth;
+              -webkit-overflow-scrolling: touch;
+              white-space: nowrap;
+              position: relative;
+              overflow-x: scroll;
+              overflow-y: hidden;
+            }
+            .product-features li.nav-item {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .nav-pills .nav-link{
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 120%;
+            }
+            .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 120%;
+            }
+              .nav-item p.show{
+              display:none!important;
+            }
+            .hidedesktop{
+              display:block!important;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 140%;
+              color: #fff;
+              letter-spacing: -0.01em;
+            }
+             .hidedesktop+.hidedesktop{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #fff;
+                letter-spacing: -0.01em;
+            }
+            .product-features .tab-content figure{
+              position: unset;
+               width: 100%;
+               margin: 0;
+            }
+
+            .product-features .tab-content figure img{
+              border-radius: 8px;
+            }
+            .slogan-text{
+              padding: 59px 16px;
+            }
+            .mobile-industry{
+              padding: 32px 0px;
+            }
+            .mobile-industry h2{
+              margin-bottom: 12px;
+          font-size: 20px;
+            }
+          
+             img{
+              width: 100%;
+            }
+            /*header css*/
+            .navbar {
+                padding: 24px 20px;
+            }
+             /*header css*/
+             /*banner css*/
+            .banner-text {
+                max-width: 328px;
+                top: inherit;
+                left: 5%;
+                bottom: 31px;
+              }
+             .banner-text p {
+                margin-bottom: 16px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0.065em;
+            }
+             .banner-text h1{
+              font-size: 24px;
+              margin: 0;
+             }
+             .banner-text .banner-information {
+                margin: 16px 0 24px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: -0.01em;
+            }
+             .banner-text .btn {
+              padding: 14px 24px;
+	          max-width: 120px;
+	          font-weight: 600;
+	          font-size: 16px;
+	          line-height: 140%;
+	          align-items: center;
+	          letter-spacing: -0.01em;
+            }
+            .customer-logos img {
+                width: auto;
+            }
+            .smartway-performance .supercharge-performance{
+             flex-direction: column;
+            }
+
+            .smartway{
+              flex-direction: column-reverse;
+            }
+            .smartway-img figure,.supercharge-performance-img figure{
+              max-width: 100%;
+              margin: 0;
+              max-height: inherit;
+            }
+            .smartway-performance .supercharge-performance h2,.smartway-performance .supercharge-performance span,.smartway-text h3{
+              font-size: 28px;
+              margin: 10px 10px 16px 0px;
+            }
+            .smartway-text h3{
+              font-size: 24px;
+            }
+            .supercharge-text p,.smartway-text p{
+               font-size: 14px;
+               margin-bottom: 50px;
+            }
+            .smartway-text p{
+              margin-bottom: 25px;
+            }
+            .smartway-text p+p{
+              margin-bottom: 32px
+            }
+            .smartway-performance {
+                padding: 0 0 35px 0;
+                background: #fff;
+            }
+            .client-logos {
+                padding: 20px 0;
+            }
+                        
+            /*footer css*/
+             .mobile-privacy a, .mobile-terms-conditions a{
+              font-size: 12px;
+             }
+             footer .copyrights p {
+                font-size: 10px;
+            }
+            .email-social-media .email-id a {
+                font-size: 16px;
+            }
+             /*footer css*/
+             .clients-info {
+                  padding: 0;
+              }
+
+             .licensed-users h3,.total-number-clients  h3{
+              font-weight: 600;
+              font-size: 28px;
+              line-height: 120%;
+              text-align: center;
+              letter-spacing: -0.035em;
+             }
+
+             .licensed-users p,.total-number-clients  p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              text-align: center;
+              letter-spacing: -0.01em;
+              margin: 0;
+             }
+             .total-number-clients,.licensed-users {
+                  margin-bottom: 0;
+                  min-height: 122px;
+              }
+               .clients-total-numbers {
+                  padding: 37px 0;
+              }
+              .slogan-text h2 br{
+                display: none;
+              }
+                                        
+             body .slogan-text h2{
+               font-family: greycliff-cf, sans-serif;
+                font-weight: 800 !important;
+                font-size: 28px;
+                line-height: 120%;
+                color: #1F1E1F;
+                text-align: center;
+                letter-spacing: -0.03em;
+             }
+               .smartway-text,.supercharge-text,.control-assest figure.arrow {
+                  max-width: 100%;
+             }
+              .control-assest figure.buildings{
+              right: 0;
+             }
+             .control-desktop-mobile{
+              position: unset;
+              padding: 35px 0;
+              max-width: 100%;
+             }
+             .control-assets-mobile h3 {
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0;
+            }
+            .control-assets-mobile p {
+                font-size: 14px;
+                margin: 12px 0 32px;
+            }
+
+             .industry-desktop-mobile{
+              display: block;
+              scroll-behavior: smooth;
+              -webkit-overflow-scrolling: touch;
+              white-space: nowrap;
+              position: relative;
+              overflow-x: scroll;
+              overflow-y: hidden;
+             }
+               .mobile-industry-type {
+                display: inline-block;
+                min-height: 184px;
+            }
+            .mobile-idustry-img-text h4 {
+                font-weight: 800;
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .mobile-idustry-img-text {
+                margin-bottom: 13px;
+            }
+            .mobile-industry-type p {
+                white-space: normal;
+            }
+            .enterprise {
+                background: #F8F7F8;
+            }
+            .enterprise .centralized-centre{
+              display: block;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            white-space: nowrap;
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-bottom: 32px;
+            left:0;
+            }
+             .centralized-center-section {
+                display: inline-block;
+                min-height: 136px;
+                height: 100%;
+                padding: 24px 16px;
+            }
+            .centralized-center-section figure {
+                display: block;
+            }
+            .centralized-center-section p {
+                white-space: normal;
+                margin: 0;
+                min-width: 202px;
+            }
+            .product-features{
+                min-height: auto;
+                padding: 0;
+            }
+          }
+
+     
+     
+
+         @media (min-width: 768px){
+         .navbar-expand-md .navbar-collapse {
+          justify-content: space-between;
+         }
+         }
+
+         @media (max-width: 1024px){
+          .navbar {
+              padding: 24px 40px;
+          }
+         }
+         @media (max-width: 912px){
+          .navbar {
+              padding: 24px 20px;
+          }
+          .navbar-dark .navbar-brand {
+              margin-right: 40px;
+          }
+          .navbar-dark .navbar-nav .nav-link {
+              font-size: 12px;
+              margin-right: 10px;
+          }
+          .btn.contact-us{
+            margin-right: 10px;
+          }
+          .control-assest figure.buildings{
+            right: 0;
+          }
+         }
+         @media  (max-device-width: 915px) and (orientation: landscape) {
+          .navbar {
+              padding: 24px 20px;
+          }
+          .navbar-dark .navbar-brand {
+              margin-right: 40px;
+          }
+          .navbar-dark .navbar-nav .nav-link {
+              font-size: 12px;
+              margin-right: 10px;
+          }
+          .btn.contact-us{
+            margin-right: 10px;
+          }
+         }
+
+
+         @media (max-width: 767px){
+           
+           .navbar {
+                background-color: #fff!important;
+            }
+            .navigation-mobile .btn{
+                padding: 10px 7px;
+            }
+            .navigation-mobile .btn.contact-us{
+                  width: 100px;
+            }
+            .navigation-mobile .btn.get-demo {
+                width: 85px;
+                padding: 10px 2px;
+            }
+            .calender-btn{
+              display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .calender-btn a{
+              width: 44px;
+                height: 36px;
+                margin-right: 12px
+            }
+            .navigation-mobile .navbar-brand{
+              width: 92px;
+            }
+          	.control-assets-mobile figure {
+              margin: 0;
+              width: 700px;
+              position: absolute;
+              right: 0;
+              bottom: 0px;
+          }
+            
+        }
+
+         @media (max-width: 480px){
+          .banner-text h1 {
+              font-size: 20px;
+              margin: 0;
+              font-weight: 700;
+              font-size: 36px;
+              line-height: 120%;
+          }
+            .slick-dots{
+            display: none !important;
+          }
+         }
+
+         .slick-dots li button::before {
+            font-size: 10px;
+         }
+      
+         #spin:after {
+            content:"";
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% { content:"productivity"; }
+  20% { content:"performance"; }
+  40% { content:"efficiency"; }
+  60% { content:"maintenance"; }
+  100% { content:"productivity"; }
+}
+
+.smartway-text h3{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 500;
+font-style: normal;
+color: #5E5A5E;
+}
+.supercharge-text h2{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 600;
+font-style: normal;
+color: #535053;
+}
+
+body p{
+   font-family: greycliff-cf,sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #5E5A5E;
+font-size: 20px;
+}
+body{
+   font-family: greycliff-cf,sans-serif;
+}
+.clients-total-numbers p {
+  font-size: 19px;
+}
+/* .btn.btn-success{
+   background: linear-gradient(to left, white 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.btn.btn-success:hover{
+   background-position: left;
+} */
+.modal-body{
+   padding-top: 35px;
+   
+}
+.modal-footer{
+   padding-bottom: 35px;
+}
+.modal-footer p{
+   font-size: 14px;
+}
+.modal-header, .modal-footer{
+   border: none;
+}
+.btn.w-100{
+   background-color: #1F1E1F;
+}
+.modal-footer a, .modal-footer a.link{
+   color: #ED4D37;
+   text-decoration: underline;
+}
+.modal.show .modal-dialog{
+	width: 762px;
+    height: 906px;
+}
+.modal-content{
+	background: #fff;
+    border-radius: 12px;
+    width: 100%;
+    padding: 40px 64px 80px;
+}
+.modal-content h2{
+	font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #3E3C3E;
+    margin-bottom: 8px;
+}
+.modal-content p{
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #3E3C3E;
+}
+.modal-content form .form-group {
+    margin-bottom: 24px;
+}
+.modal-content form .form-group label{
+	font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #878287;
+    margin-bottom: 8px;
+}
+
+.modal-content form .form-group input{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #878287;
+    height: 54px;
+    border: 0.5px solid #C3C1C3;
+    border-radius: 4px;
+}
+.modal-header,.modal-footer{
+	padding: 0;
+}
+.modal-footer{
+	justify-content: center;
+}
+.modal-body{
+	padding: 64px 0 24px;
+}
+
+.modal-content form .form-group input.phonenumber, select#inputTeam{
+	height: 60px;
+}
+select#inputTeam{
+	-webkit-appearance: none;
+    overflow: hidden;
+    background-image: url(./images/arrow.svg);
+    background-position: 275px 13px;
+    background-repeat: no-repeat;
+}
+textarea.form-control {
+    height: 98px;
+    border: 0.5px solid #C3C1C3;
+    resize: none;
+    margin-bottom: 8px;
+}
+.modal-body .btn{
+	background: #1F1E1F;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    padding: 16px 0;
+    letter-spacing: -0.01em;
+}
+.modal-footer p{
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+/*.container-fluid{
+   padding-left: 0px;
+   padding-right: 0px;
+}*/
+
+
+ @media (max-width: 767px){
+	.modal-content{
+		padding: 20px;
+	}
+	.modal.show .modal-dialog{
+		width: 95%;
+	    height: auto;
+	    margin: 10px auto;
+	}
+	.modal-open .modal{
+		padding-right: 0 !important;
+	}
+   .container-fluid{
+   padding: 15px;
+}
+.control-assets-mobile{
+   padding: 0;
+   min-height: 440px;
+}
+
+}
+.enterprise h6{
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+   -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.enterprise h4{
+   text-align: center;
+   font-size: 32px;
+   font-weight: 600;
+   color: #3E3C3E;
+   padding-bottom: 40px;
+   padding-top: 16px;
+}
+
+.enterprise{
+   background-color: #F8F7F8;
+   padding-top: 48px;
+}
+
+.enterprise figure{
+   margin: 0;
+}
+
+.form-row.phone-field span {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  border-right: solid 1.2px #C3C1C3;
+  color: #878287;
+  font-weight: 500;
+}
+
+.form-row.phone-field span img{
+   padding-left: 5px;
+   padding-right: 10px;
+}
+
+.form-row.phone-field{
+   position: relative;
+}
+
+#inputPhone{
+   padding-left: 70px;
+}
+.mobile-privacy-terms{
+   color: #AFACAF;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 781px){
+  .enterprise .centralized-centre {
+    bottom: 2%;
+    left: 6%;
+}
+.centralized-center-section {
+    padding: 24px 12px;
+    width: 170px;
+    font-size: 14px;
+}
+}
+
+ @media (max-width: 767px){
+
+ .enterprise figure {
+  margin-bottom: 15px;
+}
+.facebook-linkedin li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.enterprise h3{
+  font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+.enterprise  p.title-next{
+  font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #3E3C3E;
+    margin-bottom: 35px;
+}
+.enterprise .flex{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.enterprise .flex h5{
+  text-align: center;
+}
+.enterprise-1 figure,.enterprise-2 figure {
+    margin-bottom: 20px;
+    width: 156px;
+    min-height: 156px;
+}
+.enterprise .plus figure{
+  width: 188px;
+    height: 50px;
+    margin: 16px auto;
+}
+.enterprise-section{
+  margin-top: 60px;
+}
+.form-row.phone-field span img{
+   width: 50%;
+}
+select#inputTeam{
+  background-position: 340px 13px;
+}
+.carousel .nav{
+  background: transparent!important;
+}
+.product-features .border-section:after{
+  left:0;
+}
+#myCarousel .col-md-5{
+  padding-left: 30px;
+}
+
+img{
+    width:inherit;
+}
+.privacy-header h2{
+    font-size: 28px!important;
+}
+.privacy-body h3{
+    font-size: 24px!important;
+}
+.privacy-header {
+  padding-top: 56px!important;
+  padding-bottom: 40px!important;
+}
+}
+
+
+
+
+
+
+
+/*Privacy Policy Page CSS*/
+
+.privacy .container-fluid{
+    padding: 0;
+    background: #1F1E1F;
+}
+.privacy-header{
+   padding-top:72px;
+   padding-bottom:72px;
+
+   
+}
+.privacy-header h2{
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+color: #FFFFFF;
+}
+.privacy-body{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.privacy-body h3{
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+color: #3E3C3E;
+margin-bottom: 32px;
+}
+.privacy-body p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #5E5A5E;
+}
+.privacy-body h4{
+    font-style: normal;
+font-weight: 700;
+font-size: 28px;
+color: #ED4D37;
+margin-bottom: 24px;
+}
+.privacy-body h6{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+color: #3E3C3E;
+}
+.privacy-body .border-text{
+    border-bottom: 1px solid #D7D5D7;
+    margin-bottom: 16px;
+}
+.privacy-body .text-block-3 .border-text, .privacy-body .text-block-4 .border-text{
+    border-bottom: none;
+}
+.privacy-body .border-text h6 span{
+    margin-left: 15px;
+}
+.privacy-body .border-text p span{
+    margin-left: 40px;
+}
+.privacy-body .text-block-1, .privacy-body .text-block-2, .privacy-body .text-block-3, .privacy-body .text-block-4, .privacy-body .text-block-5, .privacy-body .text-block-6, .privacy-body .text-block-7{
+    margin-bottom: 40px;
+}
+.privacy-body .text-block-2 h4{
+    margin-bottom: 32px;
+}
+.privacy-body .text-block-5 .email{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+color: #5E5A5E;
+}
+.privacy-body .text-block-1 .border-text p span{
+    margin-left:0;
+}
+.privacy-body .text-block-1 .border-text p{
+    margin-left:25px;
+}
+
+
+      </style>
+   </head>
+<body>
+   <header>
+      <div class="navigation-mobile">
+         <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><img src="images/Inconn-Logo.svg" alt="logo-img"></a>
+            <div class="calender-btn">
+               <!-- <button class="btn contact-us d-none d-sm-inline-block" type="submit">Contact Us</button> -->
+               <a  class="d-block d-sm-none" href="#"><img src="images/calender.svg" alt="logo-img"></a>
+               <button class="btn get-demo " type="submit" data-toggle="modal" data-target="#exampleModalCenter">Get Demo</button>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <main>
+        <div class="privacy">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="privacy-header">
+                        <h2>Privacy Policy</h2>
+                    </div>
+                </div>
+            </div>
+             <div class="privacy-body">
+                    <div class="container">
+                        <h3>This Privacy Policy applies to the Inconn website, web-app and mobile application.</h3>
+                        <p>InConn recognises the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat registered user information we collect on https://www.inconn.io. This Privacy Policy applies to current and former users of our website and to our online customers. By using our website, you agree to this Privacy Policy.</p>
+                        <p>InConn is a property of Wynwy Technologies Private Limited, an Indian Company registered under the Companies Act, 2013 having its registered office at No:2/302-A, UDS Salai, Off Mahabalipuram Road, Thoriapakkam, Chennai – 600 097.</p>
+                        <h4>Information we collect</h4>
+                        <div class="text-block-1">
+                        <div class="border-text">
+                            <h6><img src="images/arrow_forward.svg"><span>Contact information</span></h6>
+                            <p class="container"><span>We collect your name, email, mobile number, phone number, work site address during the registration process.</span></p>
+                        </div>
+                        <div class="border-text">
+                            <h6><img src="images/arrow_forward.svg"><span>Payment and billing information</span></h6>
+                            <p class="container"><span>No billing or bank details are collected.</span></p>
+                        </div>
+                        <div class="border-text">
+                            <h6><img src="images/arrow_forward.svg"><span>Information you post</span></h6>
+                            <p class="container"><span>We collect information you post while using the application for data processing. This includes both text as well as multimedia uploads.</span></p>
+                        </div>
+                        <div class="border-text">
+                            <h6><img src="images/arrow_forward.svg"><span>Demographic information</span></h6>
+                            <p class="container"><span>We collect demographic information about your location when you use the application to mark attendance</span></p>
+                        </div>
+                        <div class="border-text">
+                            <h6><img src="images/arrow_forward.svg"><span>Other information</span></h6>
+                            <p class="container" style="margin-left:25px"><span style="border-bottom: none; margin-left: 0;">If you use our website, we may collect information about your IP address and the browser you're using. We might look at what site you logged into, duration of time spent on the website, pages accessed. We might also collect the type of mobile device you are using, or the version of the operating system your computer or device is running.</span></p>
+                        </div>
+                        </div>
+
+                        <div class="text-block-2">
+                            <div class="container">
+                                <h4>We collect information in different ways.</h4>
+                                <div class="row">
+                                    <div class="col-md-6 pr-5">
+                                        <h6>We collect information from you passively.</h6>
+                                        <p>We use tracking tools like Google Analytics, Google Webmaster, browser cookies and web beacons for collecting information about your usage of our website.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>We collect information directly from you</h6>
+                                        <p>We collect information directly from you when you register for as a user of the software</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-block-3">
+                            <div class="container">
+                                <h4>Use of your personal information</h4>
+                                <div class="border-text">
+                                    <h6>We use information to contact you</h6>
+                                    <p>We might use the information you provide to contact you for confirmation of a transaction on our website or for other audit purposes.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information to respond to your requests or questions</h6>
+                                    <p>We might use your information to confirm your registration , revert on a issue report etc.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information to improve our products and services</h6>
+                                    <p>We might use your information to customize your experience with us. This could include displaying content based upon your user role.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information to look at site trends and customer interests</h6>
+                                    <p>We may use your information to make our website and products better.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information for security purposes</h6>
+                                    <p>We may use information to protect our company, our customers, or our websites.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information for marketing purposes.</h6>
+                                    <p>We might send you information on product enhancements or offers. We might also tell you about new features in the existing packages in the product.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We use information to send you transactional communications</h6>
+                                    <p>We might send you emails or SMS about your account or relevant notifications based on your user role.</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text-block-4">
+                            <div class="container">
+                                <h4>Sharing of information with third-parties</h4>
+                                <div class="border-text">
+                                    <h6>We do not share information with third parties who perform services on our behalf.</h6>
+                                    <p>We do not share information with any other third party services or with any of our customers.</p>
+                                </div>
+                                <div class="border-text">
+                                    <h6>We may share information if we think we have to in order to comply with the law or to protect ourselves.</h6>
+                                    <p>We will share information to respond to a court order or subpoena. We may also share it if a government agency or investigatory body requests as mandated by the law.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text-block-5">
+                            <div class="container">
+                                <h4>Grievance Officer</h4>
+                                <p>In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:</p>
+                                <p>Mr. B R Om Prakash<br>
+                                    No:2/302-A, UDS Salai,<br>
+                                    Off Mahabalipuram Road,<br>
+                                    Thoraipakkam, Chennai – 600 097.</p>
+                                <p class="email">Email: admin@inconn.io</p>
+                                <p>If you have any questions about this Policy or other privacy concerns, you can also email us at admin@inconn.io</p>
+                            </div>
+                        </div>
+
+
+                        <div class="text-block-6">
+                            <div class="container">
+                                <h4>Updates to this policy</h4>
+                                <p>This Privacy Policy was last updated on 27.05.2022. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="text-block-7">
+                            <div class="container">
+                                <h4>Jurisdiction</h4>
+                                <p>If you choose to visit the website, your visit and any dispute over privacy is subject to this Policy and the website's terms of use. In addition to the foregoing, any disputes arising under this Policy shall be governed by the laws of India.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            
+                
+        </div>
+   </main>
+   <footer class="footer-mobile">
+      <div class="container">
+         <div class="footer-mobile-logo">
+            <a href="#"><img src="images/footer-logos.png" alt="logo-img"></a>
+         </div>
+         <div class="email-social-media ">
+            <div class="email-id">
+               <a href="mailto:info@inconn.com">info@inconn.com</a>
+            </div>
+            <div class="mobile-social">
+               <ul class="facebook-linkedin">
+                  <li>
+                     <a href="https://www.facebook.com/inconnapp/" target="_blank"><img src="./images/facebook-mobile.png" class="img-responsive" alt="facebook"></a>
+                  </li>
+                  <li>
+                     <a href="https://www.linkedin.com/company/inconn/about/" target="_blank"><img src="./images/linkedin-mobile.png" class="img-responsive" alt="linkedin"></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="privacy-terms-copyright">
+            <div class="copyrights">
+               <p>All rights reserved. 2023</p>
+            </div>
+            <div class="mobile-privacy-terms">
+               <div class="mobile-privacy">
+                  <ul>
+                     <li>
+                        <a href="https://www.inconn.com/privacy-policy.html">Privacy Policy</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="mobile-terms-conditions">
+                  <ul>
+                     <li>
+                        <a>T&C</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer> 
+      <!-- Button trigger modal -->
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+       
+        <div class="modal-header">
+            <a class="navbar-brand" href="#"><img src="images/Inconn-Logo.svg" alt="logo-img"></a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 3rem">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+            <h2>Get Demo</h2>
+            <p>Tell us a little bit more about yourself and we’ll tell you a lot  more about us.</p>
+          <form id="form">
+             <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" name="Name" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email Address</label>
+                <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="name@email.com">
+              </div>
+             <div class="form-row phone-field">
+               <div class="form-group col-md-6">
+                 <label for="inputPhone">Phone Number</label>
+                 <span>+91<img src="images/arrow_drop_down.svg"></span>
+                 <input type="text" class="form-control phonenumber" id="inputPhone" name="Phone" placeholder="1234567890">
+               </div>
+               <div class="form-group col-md-6">
+                 <label for="inputTeam">Team Size</label>
+                 <select id="inputTeam" class="form-control" name="Team Size">
+                   <option selected>1-10</option>
+                   <option>50-100</option>
+                   <option>100-1000</option>
+                   <option>1000-3000</option>
+                   <option>5000+</option>
+                 </select>
+               </div>
+             </div>
+             <div class="form-group">
+               <label for="inputcomments">Comments</label>
+               <textarea class="form-control" id="inputcomments" name="Comments" rows="3" placeholder="Type your comment here..."></textarea>
+             </div>
+             <button type="submit" class="btn btn-primary w-100" id="submit">Submit</button>
+           </form>
+    
+        </div>
+        <div class="modal-footer">
+          <p>By clicking submit you accept our <a class="link" href="https://http://www.inconn.com/privacy-policy.html">Privacy Policy</a> and <a class="link">Terms & Conditions</a></p>
+        </div>
+      </div>
+    </div>
+  </div>  
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+      <script type="text/javascript"> 
+      $(document).ready(function(){ 
+       
+$(".product-features .nav-item  p").hide();
+// $(".product-features .nav-item  p.first-link").show();
+// $(".product-features .nav-item a").click(function() {
+//   $(".product-features .nav-item  p.show").hide();
+//     $(this).parent().find("p").show();
+//   });
+  
+  
+
+                $('.banner-images').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            infinite: true,
+            arrows: false,
+            dots: true,
+            pauseOnHover: false,
+            fade: true,
+            cssEase: 'linear',
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });       
+        
+
+
+const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxBrSLqWvka0EAKY52RMbhlOnD-7Iy3s5af6mx63oyWP5z-Wxj3effFQ4xyCA7bftWq/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+         //  alert('Success!', response)
+          submitButton.disabled = false
+          document.getElementById("form").reset();    
+          const div = document.createElement('div');
+          div.innerHTML = "Form submitted successfully";
+          div.style.color = "Green";
+          div.style.textAlign = "center";
+          div.style.paddingTop = "35px";
+          document.getElementById("form").appendChild(div); 
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+
+
+   $('.nav li.active').find("p").show();
+
+var clickEvent = false;
+$("#myCarousel").on("click", ".nav a", function(){
+    clickEvent = true;
+    $(this).parent().siblings().removeClass("active");
+    $(this).parent().addClass("active");        
+}).on("slid.bs.carousel", function(e){
+    if(!clickEvent){
+        itemIndex = $(e.relatedTarget).index();
+        targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+        $(".nav li").not(targetNavItem).removeClass("active");
+        $(".nav li").not(targetNavItem).removeClass("dis");
+        $(".nav li").not(targetNavItem).find("p").hide();
+        targetNavItem.addClass("active");
+        targetNavItem.addClass("dis");
+        
+         $(".nav li.dis.active").find("p").show();
+//        // $(".nav li a p").hide();  
+//             if (!$('.nav li').hasClass('dis')) {
+//                 $('.nav li a p').hide();
+    // $(this).find("p").show();
+// }
+    }
+    clickEvent = false;
+});
+
+
+      });
+
+      $(window).on('load', function() {
+ // code here
+ $.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 100,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+            if(mathCount > 65000 && mathCount < 68000){ mathCount = 68000; }
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+   // $('#total-order').jQuerySimpleCounter({end: 68000,duration: 1500});
+   $('#total-clients').jQuerySimpleCounter({end: 25,duration: 1000});
+$('#total-users').jQuerySimpleCounter({end: 500,duration: 1500});
+$('#real-time-asset').jQuerySimpleCounter({end: 3000,duration: 2000});
+$('#total-order').jQuerySimpleCounter({end: 68000,duration: 2500});
+
+
+
+});
+
+      
+      </script>
+</html>

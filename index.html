@@ -188,7 +188,7 @@
         /*product features*/
         .product-features{
           background: #1F1E1F;
-          padding: 92px 0 0px 80px;
+          padding: 65px 0 0px 80px;
           min-height: 745px;
         }
         .product-features h5 {
@@ -198,6 +198,7 @@
           text-transform: uppercase;
           color: #fff;
           text-align: left;
+          padding-top: 50px;
           margin-bottom: 24px;
       }
       .nav.nav-pills{
@@ -829,7 +830,7 @@ p.show+p.show {
               content: "";
               position: absolute;
               background: #3E3C3E;
-              height: 100%;
+              height: 84%;
               width: 1px;
               top: 0;
               left: -20px;
@@ -1556,6 +1557,15 @@ textarea.form-control {
 select#inputTeam{
   background-position: 340px 13px;
 }
+.carousel .nav{
+  background: transparent!important;
+}
+.product-features .border-section:after{
+  left:0;
+}
+#myCarousel .col-md-5{
+  padding-left: 30px;
+}
 }
 
 .stop-scrolling {
@@ -1564,12 +1574,132 @@ select#inputTeam{
 }
 
 .nav-pills .nav-link.active::after{
-  display: none;
+  /* display: none; */
 }
 
 
 
 
+
+
+
+
+.carousel {
+    margin: 0;
+    background: #ccc;
+}
+.carousel .carousel-item {
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+}
+.carousel .carousel-item img {
+    max-width: 100%;
+    margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
+}
+.carousel-caption h3, .carousel-caption p {
+    color: #fff;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: none;
+    margin-bottom: 20px;
+}
+.carousel-caption h3 {
+    background: rgba(0,0,0,0.9);
+    padding: 12px 24px;
+    font-size: 40px;    
+    text-transform: uppercase;
+}
+.carousel-caption p {
+    background: #20b0b9;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.carousel .nav {    
+    background: #eee;
+    flex-direction: column;
+}
+.carousel .nav a {
+    color: #333;
+    border-radius: 0;
+    font-size: 85%;
+    padding: 10px 16px;
+    background: transparent;
+}
+.carousel .nav .active a {
+  font-weight: 700;
+font-size: 28px;
+line-height: 140%;
+letter-spacing: -0.01em;
+background: linear-gradient(230.01deg, #FF9B00 10.94%, #ED4D37 89.46%);
+  background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.carousel .nav .active a::after {
+  content: "";
+position: absolute;
+background: red;
+top: 0;
+left: -19px;
+height: 110%;
+width: 2px;
+background: #FF9B00;
+
+}
+.carousel .nav strong {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+#myCarousel, #myCarousel .col-md-5, .carousel .nav a, .nav-justified .nav-item{
+  background: #1F1E1F;
+}
+
+.carousel .nav a{
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+/* line-height: 120%; */
+color: #535053;
+padding: 0;
+margin-top: 32px;
+text-align: left;
+pointer-events: none;
+}
+
+.carousel .nav li:first-child a{
+  margin-top: 0;
+}
+
+.carousel .nav p.first{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 132%;
+  color: #fff;
+  margin: 12px 0;
+  letter-spacing: -0.025em;
+}
+.carousel .nav p {
+  font-size: 28px;
+  text-align: left;
+  margin-top: 20px;
+}
+.carousel .nav p.second{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
 
 
 
@@ -1698,7 +1828,7 @@ select#inputTeam{
       <!-- prodcut features section-->
       <div class="product-features">
  <div class="container-fluid">
-  <div class="border-section">
+  <div class="border-section" style="display: none  ;">
      <h5>Product FEATURES</h5>
      <div class="trigger" style="position: absolute;
      height: 38px;
@@ -1710,76 +1840,141 @@ select#inputTeam{
   <div class="row">
     <div class="col-md-5 mb-3">
         <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="asset-management-tab" data-toggle="tab" href="#asset-management" role="tab" aria-controls="asset-management" aria-selected="true">Asset Management</a>
-    <p class="show first-link">Personalised, preventative digital asset management </p>
-    <p class="show first-link">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="workflow-collaboration-tab" data-toggle="tab" href="#workflow-collaboration" role="tab" aria-controls="workflow-collaboration" aria-selected="false">Workflows & Collaboration</a>
-    <p class="show">Centralised command centre for operation agility </p>
-    <p class="show">Eliminate data silos by logging all critical data across teams and assets — from work orders to asset data. Configure workflows as per your business needs — Gain holistic data visibility through our intuitive mobile app from top to frontline.</p>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="automation-integrations-tab" data-toggle="tab" href="#automation-integrations" role="tab" aria-controls="automation-integrations" aria-selected="false">Automations & Integrations</a>
-    <p class="show">Empower your people to do more with less — with IoT</p>
-    <p class="show">Upgrade your BMS with real-time data and smart IoT integrations. Reimagine your business-critical systems. Effortlessly elevate your business with IoT connectivity and intelligent automation and scale your business productivity for maximum impact.</p>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link" id="sustainability-tab" data-toggle="tab" href="#sustainability" role="tab" aria-controls="sustainability" aria-selected="false">Sustainability</a>
-    <p class="show">Build towards sustainable future starting today!</p>
-    <p class="show">Integrate AI & IoT capabilities and take your digital transformation to new heights with empowered assets, people and processes. Reduce utility consumption and environmental footprint, cut costs and support ESG initiatives and contribute towards making the world better.</p>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link" id="reporting-analytics-tab" data-toggle="tab" href="#reporting-analytics" role="tab" aria-controls="reporting-analytics" aria-selected="false">Reporting & Analytics</a>
-    <p class="show">Visualise your entire operations with 360° data</p>
-    <p class="show">Gain holistic visibility with custom reports and dashboards to unlock insights - save cost, reduce risks and inefficiencies impacting your business. Predict and prevent downtimes and unexpected shutdowns, take action, be agile and streamline your processes for better outcomes. </p>
-  </li>
-</ul>
+            <li class="nav-item">
+              <a class="nav-link active" id="asset-management-tab" data-toggle="tab" href="#asset-management" role="tab" aria-controls="asset-management" aria-selected="true">Asset Management</a>
+              <p class="show first-link">Personalised, preventative digital asset management </p>
+              <p class="show first-link">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="workflow-collaboration-tab" data-toggle="tab" href="#workflow-collaboration" role="tab" aria-controls="workflow-collaboration" aria-selected="false">Workflows & Collaboration</a>
+              <p class="show">Centralised command centre for operation agility </p>
+              <p class="show">Eliminate data silos by logging all critical data across teams and assets — from work orders to asset data. Configure workflows as per your business needs — Gain holistic data visibility through our intuitive mobile app from top to frontline.</p>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="automation-integrations-tab" data-toggle="tab" href="#automation-integrations" role="tab" aria-controls="automation-integrations" aria-selected="false">Automations & Integrations</a>
+              <p class="show">Empower your people to do more with less — with IoT</p>
+              <p class="show">Upgrade your BMS with real-time data and smart IoT integrations. Reimagine your business-critical systems. Effortlessly elevate your business with IoT connectivity and intelligent automation and scale your business productivity for maximum impact.</p>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" id="sustainability-tab" data-toggle="tab" href="#sustainability" role="tab" aria-controls="sustainability" aria-selected="false">Sustainability</a>
+              <p class="show">Build towards sustainable future starting today!</p>
+              <p class="show">Integrate AI & IoT capabilities and take your digital transformation to new heights with empowered assets, people and processes. Reduce utility consumption and environmental footprint, cut costs and support ESG initiatives and contribute towards making the world better.</p>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" id="reporting-analytics-tab" data-toggle="tab" href="#reporting-analytics" role="tab" aria-controls="reporting-analytics" aria-selected="false">Reporting & Analytics</a>
+              <p class="show">Visualise your entire operations with 360° data</p>
+              <p class="show">Gain holistic visibility with custom reports and dashboards to unlock insights - save cost, reduce risks and inefficiencies impacting your business. Predict and prevent downtimes and unexpected shutdowns, take action, be agile and streamline your processes for better outcomes. </p>
+            </li>
+        </ul>
     </div>
     <!-- /.col-md-4 -->
         <div class="col-md-7">
-      <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="asset-management" role="tabpanel" aria-labelledby="asset-management-tab">
-   <p class="hidedesktop">Personalised, preventative digital asset management</p>
-   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-   <figure>
-     <img src="./images/assets-management.png" class="img-responsive" alt="response-time">
-   </figure>
-  </div>
-  <div class="tab-pane fade" id="workflow-collaboration" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
-    <p class="hidedesktop">Personalised, preventative digital asset management</p>
-   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-   <figure>
-     <img src="./images/workflow-collaboration.png" class="img-responsive" alt="workflow-collaboration">
-   </figure>
-  </div>
-  <div class="tab-pane fade" id="automation-integrations" role="tabpanel" aria-labelledby="automation-integrations-tab">
-     <p class="hidedesktop">Personalised, preventative digital asset management</p>
-   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-   <figure>
-     <img src="./images/automations-integrations.png" class="img-responsive" alt="automations-integrations">
-   </figure>
-  </div>
-    <div class="tab-pane fade" id="sustainability" role="tabpanel" aria-labelledby="sustainability-tab">
-   <p class="hidedesktop">Personalised, preventative digital asset management</p>
-   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-   <figure>
-     <img src="./images/sustainability.png" class="img-responsive" alt="sustainability">
-   </figure>
-  </div>
-    <div class="tab-pane fade" id="reporting-analytics" role="tabpanel" aria-labelledby="reporting-analytics-tab">
-     <p class="hidedesktop">Personalised, preventative digital asset management</p>
-   <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
-   <figure>
-     <img src="./images/reporting-analytics.png" class="img-responsive" alt="reporting-analytics">
-   </figure>
-  </div>
-</div>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="asset-management" role="tabpanel" aria-labelledby="asset-management-tab">
+            <p class="hidedesktop">Personalised, preventative digital asset management</p>
+            <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+            <figure>
+              <img src="./images/assets-management.png" class="img-responsive" alt="response-time">
+            </figure>
+          </div>
+          <div class="tab-pane fade" id="workflow-collaboration" role="tabpanel" aria-labelledby="workflow-collaboration-tab">
+            <p class="hidedesktop">Personalised, preventative digital asset management</p>
+          <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+          <figure>
+            <img src="./images/workflow-collaboration.png" class="img-responsive" alt="workflow-collaboration">
+          </figure>
+          </div>
+          <div class="tab-pane fade" id="automation-integrations" role="tabpanel" aria-labelledby="automation-integrations-tab">
+            <p class="hidedesktop">Personalised, preventative digital asset management</p>
+          <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+          <figure>
+            <img src="./images/automations-integrations.png" class="img-responsive" alt="automations-integrations">
+          </figure>
+          </div>
+          <div class="tab-pane fade" id="sustainability" role="tabpanel" aria-labelledby="sustainability-tab">
+        <p class="hidedesktop">Personalised, preventative digital asset management</p>
+        <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+        <figure>
+          <img src="./images/sustainability.png" class="img-responsive" alt="sustainability">
+        </figure>
+        </div>
+        <div class="tab-pane fade" id="reporting-analytics" role="tabpanel" aria-labelledby="reporting-analytics-tab">
+        <p class="hidedesktop">Personalised, preventative digital asset management</p>
+      <p class="hidedesktop">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p>
+      <figure>
+        <img src="./images/reporting-analytics.png" class="img-responsive" alt="reporting-analytics">
+      </figure>
+      </div>
+    </div>
     </div>
     <!-- /.col-md-8 -->
   </div>
   </div>
+
+
+  <div class="border-section">
+    <h5>Product FEATURES</h5>
+  <!-- <div class="row">
+    <div class="col-md-12"> -->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="row">
+               <!-- Carousel controls -->
+               <div class="col-md-5 mb-3">
+                  <ol class="nav nav-pills nav-justified">
+                    <li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a href="#" class="nav-link">About</a><p class="first">Personalised, preventative digital asset management</p><p class="second">Connect all your assets, and gain real-time data visibility. Save costs and boost your asset's lifecycle with financial, and performance analytics — build robust strategies and tactics to keep the switch on and running at all time.</p></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a href="#" class="nav-link">Workflows & Collaboration</a><p class="first">Centralised command centre for operation agility </p><p class="second">Eliminate data silos by logging all critical data across teams and assets — from work orders to asset data. Configure workflows as per your business needs — Gain holistic data visibility through our intuitive mobile app from top to frontline.</p></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#" class="nav-link">Automations & Integrations</a><p class="first">Empower your people to do more with less — with IoT</p><p class="second">Upgrade your BMS with real-time data and smart IoT integrations. Reimagine your business-critical systems. Effortlessly elevate your business with IoT connectivity and intelligent automation and scale your business productivity for maximum impact.</p></li>
+                    <li data-target="#myCarousel" data-slide-to="3" class="nav-item"><a href="#" class="nav-link">Sustainability</a><p class="first">Build towards sustainable future starting today!</p><p class="second">Integrate AI & IoT capabilities and take your digital transformation to new heights with empowered assets, people and processes. Reduce utility consumption and environmental footprint, cut costs and support ESG initiatives and contribute towards making the world better.</p></li>
+                    <li data-target="#myCarousel" data-slide-to="4" class="nav-item"><a href="#" class="nav-link">Reporting & Analytics</a><p class="first">Visualise your entire operations with 360° data</p><p class="second">Gain holistic visibility with custom reports and dashboards to unlock insights - save cost, reduce risks and inefficiencies impacting your business. Predict and prevent downtimes and unexpected shutdowns, take action, be agile and streamline your processes for better outcomes.</p></li>
+                    
+                 </ol>
+              </div>
+            <!-- Wrapper for carousel items -->
+              <div class="col-md-7">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="./images/assets-management.png" class="img-fluid" alt="Notebook">
+                          <div class="carousel-caption">
+                              <!-- <h3>Amazing Digital Experience</h3>
+                              <p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p> -->
+                          </div>
+                      </div>  
+                      <div class="carousel-item">
+                          <img src="./images/workflow-collaboration.png" class="img-fluid" alt="Tablet">
+                          <div class="carousel-caption">
+                              <!-- <h3>Live Monitoring Tools</h3>                          
+                              <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus vitae.</p> -->
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <img src="./images/automations-integrations.png" class="img-fluid" alt="Workstation">
+                          <div class="carousel-caption">
+                              <!-- <h3>Attractive Pricing</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque tempor quis.</p> -->
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <img src="./images/sustainability.png" class="img-fluid" alt="Report">
+                          <div class="carousel-caption">
+      <!--                             <h3>Award Winning Support</h3>
+                              <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus ultrices placerat.</p> -->
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/reporting-analytics.png" class="img-fluid" alt="Report">
+                        <div class="carousel-caption">
+      <!--                             <h3>Award Winning Support</h3>
+                            <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus ultrices placerat.</p> -->
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+        </div>
+    </div>
+  </div>
+<!-- </div>
+</div> -->
 
 
 
@@ -2024,7 +2219,7 @@ select#inputTeam{
                <div class="mobile-privacy">
                   <ul>
                      <li>
-                        <a>Privacy Policy</a>
+                        <a href="https://www.inconn.com/privacy-policy.html">Privacy Policy</a>
                      </li>
                   </ul>
                </div>
@@ -2086,7 +2281,7 @@ select#inputTeam{
    
        </div>
        <div class="modal-footer">
-         <p>By clicking submit you accept our <a class="link">Privacy Policy</a> and <a class="link">Terms & Conditions</a></p>
+         <p>By clicking submit you accept our <a class="link" href="https://www.inconn.com/privacy-policy.html">Privacy Policy</a> and <a class="link">Terms & Conditions</a></p>
        </div>
      </div>
    </div>
@@ -2100,11 +2295,11 @@ select#inputTeam{
       $(document).ready(function(){ 
        
 $(".product-features .nav-item  p").hide();
-$(".product-features .nav-item  p.first-link").show();
-$(".product-features .nav-item a").click(function() {
-  $(".product-features .nav-item  p.show").hide();
-    $(this).parent().find("p").show();
-  });
+// $(".product-features .nav-item  p.first-link").show();
+// $(".product-features .nav-item a").click(function() {
+//   $(".product-features .nav-item  p.show").hide();
+//     $(this).parent().find("p").show();
+//   });
   
   
 
@@ -2132,106 +2327,6 @@ $(".product-features .nav-item a").click(function() {
             }]
         });       
         
-let cnt = 40;
-let cntUP;
-let secHeight = jQuery('.product-features #myTab').height(); console.log("secheight",Math.ceil(secHeight));
-let amtab = $('#asset-management-tab').offset(); console.log("asset",Math.ceil(amtab.top));
-let wctab = $('#workflow-collaboration-tab').offset(); console.log("workflow",Math.ceil(wctab.top));
-let aitab = $('#automation-integrations-tab').offset(); console.log("automation",Math.ceil(aitab.top));
-let stab = $('#sustainability-tab').offset(); console.log("sustainability",Math.ceil(stab.top));
-let direction;
-
-$("product-features .trigger").css("top",amtab.top);
-$(".nav-item a").attr('lock','true');
-  jQuery('.product-features').bind('DOMMouseScroll', function(e){
-    
-  if(e.originalEvent.detail > 0) {
-            //scroll down
-           // console.log('Down');
-           
-           
-           if(secHeight < 570){ 
-            
-            cnt=cnt+10;
-           $(".trigger").css("top", cnt);
-
-    if(cnt == 40){
-    $('.nav-item a[href="#asset-management"]').tab('show');
-    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');   
-    $('.nav-item a[href="#reporting-analytics"]').attr('lock','false');
-    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');     
-    // $('.nav-item a[href="#automation-integrations"]').attr('lock','true');
-    // $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');
-    // $('.nav-item a[href="#sustainability"]').attr('lock','true');
-    }
-    else if(cnt == 300 && $('.nav-item a[href="#workflow-collaboration"]').attr('lock') == 'false'){
-    $('.nav-item a[href="#workflow-collaboration"]').tab('show');
-    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'none');   
-    $('.nav-item a[href="#asset-management"]').attr('lock','false');
-    }
-    else if(cnt == 430){
-      $('.nav-item a[href="#automation-integrations"]').tab('show');
-    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');    
-    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','false');
-    }
-    else if(cnt == 500){
-      $('.nav-item a[href="#sustainability"]').tab('show');
-    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'none');  
-    $('.nav-item a[href="#automation-integrations"]').attr('lock','false');  
-    }   
-    else if(cnt == 570){
-      $('.nav-item a[href="#reporting-analytics"]').tab('show');
-    $('.nav-item a[href="#reporting-analytics"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'none');    
-    $('.nav-item a[href="#sustainability"]').attr('lock','false'); 
-    }
-
-           }
-        }
-        else {
-            //scroll up
-            // console.log('Up');
-            
-            if(cnt !== 40){
-              
-            cnt=cnt-10; 
-            $(".trigger").css("top", cnt);
-    if(cnt == 240 && $('.nav-item a[href="#sustainability"]').attr('lock') == 'false'){
-    $('.nav-item a[href="#sustainability"]').tab('show');
-    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#reporting-analytics"]').parent().children("p.show").css('display', 'none');   
-    // $('.nav-item a[href="#sustainability"]').attr('lock','true');
-    }
-    else if(cnt == 180 && $('.nav-item a[href="#automation-integrations"]').attr('lock') == 'false'){    
-      $('.nav-item a[href="#automation-integrations"]').tab('show');
-    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#sustainability"]').parent().children("p.show").css('display', 'none');
-    $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');     
-    }
-    else if(cnt == 110 && $('.nav-item a[href="#workflow-collaboration"]').attr('lock') == 'false'){    
-      $('.nav-item a[href="#workflow-collaboration"]').tab('show');
-    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#automation-integrations"]').parent().children("p.show").css('display', 'none');   
-    // $('.nav-item a[href="#workflow-collaboration"]').attr('lock','true');  
-    }
-    else if(cnt == 40 && $('.nav-item a[href="#asset-management"]').attr('lock') == 'false'){    
-      $('.nav-item a[href="#asset-management"]').tab('show');
-    $('.nav-item a[href="#asset-management"]').parent().children("p.show").css('display', 'block');
-    $('.nav-item a[href="#workflow-collaboration"]').parent().children("p.show").css('display', 'none');     
-    }
-            }
-        }
-
-        //prevent page fom scrolling
-        return false;
-//$('body').addClass('stop-scrolling');
-    
-
-    });
 
 
 const form = document.querySelector("#form")
@@ -2261,6 +2356,35 @@ const form = document.querySelector("#form")
        }
        )
    })
+
+
+   $('.nav li.active').find("p").show();
+
+var clickEvent = false;
+$("#myCarousel").on("click", ".nav a", function(){
+    clickEvent = true;
+    $(this).parent().siblings().removeClass("active");
+    $(this).parent().addClass("active");        
+}).on("slid.bs.carousel", function(e){
+    if(!clickEvent){
+        itemIndex = $(e.relatedTarget).index();
+        targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+        $(".nav li").not(targetNavItem).removeClass("active");
+        $(".nav li").not(targetNavItem).removeClass("dis");
+        $(".nav li").not(targetNavItem).find("p").hide();
+        targetNavItem.addClass("active");
+        targetNavItem.addClass("dis");
+        
+         $(".nav li.dis.active").find("p").show();
+//        // $(".nav li a p").hide();  
+//             if (!$('.nav li').hasClass('dis')) {
+//                 $('.nav li a p').hide();
+    // $(this).find("p").show();
+// }
+    }
+    clickEvent = false;
+});
+
 
       });
 
